@@ -66,7 +66,6 @@ h1 {
   font-size: 4rem;
   line-height: 4rem;
   font-weight: 700;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
@@ -75,7 +74,6 @@ h2 {
   font-family: 'Gilroy', sans-serif;
   font-size: 3rem;
   font-weight: 700;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
@@ -84,7 +82,6 @@ h3 {
   font-family: 'Gilroy', sans-serif;
   font-size: 2.5rem;
   font-weight: 500;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
@@ -93,7 +90,6 @@ h4 {
   font-family: 'Gilroy', sans-serif;
   font-size: 2rem;
   font-weight: 400;
-  text-align: left;
   margin: 0;
   color: var(--primary-color);
 }
@@ -101,17 +97,15 @@ h4 {
 h5 {
   font-family: 'Gilroy', sans-serif;
   font-size: 1.75rem;
-  font-weight: 700;
-  text-align: left;
+  font-weight: 400;
   margin: 0;
-  color: var(--secondary-color);
+  color: var(--default);
 }
 
 h6 {
   font-family: 'Gilroy', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
@@ -120,7 +114,6 @@ h6 {
   font-family: 'Gilroy', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
@@ -129,7 +122,6 @@ h6 {
   font-family: 'Gilroy', sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
@@ -138,7 +130,6 @@ h6 {
   font-family: 'Gilroy', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
@@ -147,7 +138,6 @@ h6 {
   font-family: 'Gilroy', sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
@@ -156,22 +146,38 @@ h6 {
   font-family: 'Gilroy', sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  text-align: left;
   margin: 0;
   color: var(--secondary-color);
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+  padding: 0 10rem;
+}
+
 nav {
-  background-color: var(--bg-transparent);
+  background-color: var(--bg-transparent); /* Ensuring we use the transparent variable */
+  position: sticky;
+  top: 0; /* This is needed to stick to the top */
+  z-index: 1000; /* High z-index to ensure the navbar is above other content */
+
 }
 
 .navbar-container {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   padding: 0 20px;
-  position: sticky;
   margin: 0 2vw
 }
 
@@ -234,17 +240,25 @@ Link:hover {
 }
 
 .hero-section {
-  background-color: transparent;
-  background-size: cover;
-  padding: 0 10vw 0 10vw;
-  height: 100vh;
+  
   display: flex;
+  background-image: url("../public/hero-bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -60px; /* Pull the hero section up by the height of the navbar */
+  padding-top: 60px;
+
 }
 
 .hero-container {
   align-items: center; /* Align vertically */
   justify-content: flex-start; 
   display: flex;
+  background-color: transparent;
+  background-size: cover;
+  padding: 0 10vw 0 10vw;
+  height: 100vh;
 }
 
 .hero-header {
@@ -252,35 +266,76 @@ Link:hover {
 }
 
 .content-container {
-  color: var(--bg-primary);
+  background-color: var(--bg-primary);
+  background-size: cover;
+  padding: 0 10vw 0 10vw;
+  height: 100vh;
+  display: block;
+}
+
+.button-double-container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .button-primary {
-  border-radius: 30px;
-  color: white;
-  background-color: var(--primary-color);
   border: none;
-  height: 3rem;
+  background-color: var(--primary-color);
+  color: white;
   padding: 0.5rem 2.5rem;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s; /* Optional for a smooth color transition effect */
 }
+  
+
 
 .button-secondary {
-  border-radius: 30px;
-  color: var(--primary-color);
+  border: 2px solid var(--primary-color); /* Replace 'green' with any color code you prefer */
   background-color: transparent;
-  border-color: var(--primary-color);
-  height: 3rem;
+  color: var(--primary-color);
   padding: 0.5rem 2.5rem;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s; /* Optional for a smooth color transition effect */
 }
 
-body {
-  background-image: url("../public/hero-bg2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+.section-txt-img-center {
+  padding: 8rem 0;
+}
+
+.proj1-img-container {
+  padding: 0 2vw 0 2vw;
+  align-items: center;
+  justify-content: center; 
+  display: flex;
+}
+
+.section-txt-img-left {
+  padding: 8rem 0;
+}
+
+body, main {
+  margin: 0;
+  padding: 0;
 }
 
