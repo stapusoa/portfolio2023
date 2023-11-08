@@ -266,7 +266,8 @@ Link:hover {
 }
 
 .content-container {
-  background-color: var(--bg-primary);
+  background-image: url("../public/background-texture-dots.png");
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 0 10vw 0 10vw;
   height: 100vh;
@@ -323,6 +324,26 @@ Link:hover {
   padding: 8rem 0;
 }
 
+
+
+.section-txt-img-left {
+  padding: 8rem 0;
+  display: flex;
+  align-items: center; /* Align vertically */
+
+}
+
+.proj-text-container {
+  flex: 1;
+}
+
+.section-txt-img-right {
+  padding: 8rem 0;
+  display: flex;
+  align-items: center; /* Align vertically */
+
+}
+
 .proj1-img-container {
   padding: 0 2vw 0 2vw;
   align-items: center;
@@ -330,8 +351,18 @@ Link:hover {
   display: flex;
 }
 
-.section-txt-img-left {
-  padding: 8rem 0;
+.proj2-img-container {
+  padding: 0 2vw 0 2vw;
+  align-items: center;
+  justify-content: center; 
+  display: flex;
+}
+
+.proj3-img-container {
+  padding: 0 2vw 0 2vw;
+  align-items: center;
+  justify-content: center; 
+  display: flex;
 }
 
 body, main {
