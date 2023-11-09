@@ -43,9 +43,9 @@ export default function Home() {
             </h3>
             <div className="proj1-img-container">
               <Image
-                  src="/project-image-1-fb.png" // The path to your image file, relative to the public directory
+                  src="/fbprod-project-image.jpg" // The path to your image file, relative to the public directory
                   alt="Project Image" // Alternative text for the image
-                  width={900} // The width of the image in pixels
+                  width={1200} // The width of the image in pixels
                   height={300} // The height of the image in pixels
                   layout="intrinsic" // Optional: Defines how the image should be resized and positioned
                 />   
@@ -56,15 +56,15 @@ export default function Home() {
           <div className="section-txt-img-left">
             <div className="proj-text-container">
               <h5 className="text-left">
-                quarium hosting
+                haven massage
               </h5>
               <h3 className="text-left">
-                hosting business financials and records in one place.              </h3>
+                providing professional therapeutic services through easy booking.            </h3>
             </div>
             
             <div className="proj2-img-container">
               <Image
-                  src="/project-image-2-q.png" // The path to your image file, relative to the public directory
+                  src="/hm-project-img.jpg" // The path to your image file, relative to the public directory
                   alt="Project Image" // Alternative text for the image
                   width={700} // The width of the image in pixels
                   height={300} // The height of the image in pixels
@@ -78,7 +78,7 @@ export default function Home() {
             
             <div className="proj3-img-container">
               <Image
-                  src="/project-image-3-tp.png" // The path to your image file, relative to the public directory
+                  src="/tp-project-img.jpg" // The path to your image file, relative to the public directory
                   alt="Project Image" // Alternative text for the image
                   width={700} // The width of the image in pixels
                   height={300} // The height of the image in pixels

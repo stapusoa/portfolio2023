@@ -269,8 +269,7 @@ Link:hover {
   background-image: url("../public/background-texture-dots.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 10vw 0 10vw;
-  height: 100vh;
+  height: 350vh;
   display: block;
 }
 
@@ -321,13 +320,13 @@ Link:hover {
 }
 
 .section-txt-img-center {
-  padding: 8rem 0;
+  padding: 8rem 10rem;
 }
 
 
 
 .section-txt-img-left {
-  padding: 8rem 0;
+  padding: 8rem 10rem;
   display: flex;
   align-items: center; /* Align vertically */
 
@@ -338,14 +337,14 @@ Link:hover {
 }
 
 .section-txt-img-right {
-  padding: 8rem 0;
+  padding: 8rem 10rem;
   display: flex;
   align-items: center; /* Align vertically */
 
 }
 
 .proj1-img-container {
-  padding: 0 2vw 0 2vw;
+  padding: 4rem 2vw 0 2vw;
   align-items: center;
   justify-content: center; 
   display: flex;
