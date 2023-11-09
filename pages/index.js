@@ -1,7 +1,8 @@
 // pages/index.js
 import Head from 'next/head';
 import Image from 'next/image';
-
+import MyLink from '../components/MyLink.js';
+import MyButton from '..components/MyButton';
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
             <h3 className="text-center">
               simplifying inventory management in the warehouse and in the office.
             </h3>
+            <MyLink href="/about">About Us</MyLink>
             <div className="proj1-img-container">
               <Image
                   src="/fbprod-project-image.jpg" // The path to your image file, relative to the public directory
