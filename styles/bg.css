@@ -1,0 +1,12 @@
+.hero-bg-home {
+    display: flex;
+    background-image: url("../public/hero-bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
+    padding-top: 60px;
+}
+
+
+    

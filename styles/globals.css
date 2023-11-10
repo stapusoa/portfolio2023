@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
   font-family: 'Gilroy';
   src: url('fonts/Gilroy-Bold.ttf') format('truetype');
@@ -19,6 +20,8 @@
   font-style: normal;
 }
 
+
+/* colors */
 :root {
   --cambridge: #81B29A;
   --deft: #3D405B;
@@ -61,6 +64,8 @@
   --bg-transparent: transparent;
 }
 
+
+/* typography */
 h1 {
   font-family: 'Gilroy', sans-serif;
   font-size: 4rem;
@@ -150,6 +155,8 @@ h6 {
   color: var(--secondary-color);
 }
 
+
+/* text alignment */
 .text-left {
   text-align: left;
 }
@@ -163,116 +170,31 @@ h6 {
   padding: 0 10rem;
 }
 
-nav {
-  background-color: var(--bg-transparent); /* Ensuring we use the transparent variable */
-  position: sticky;
-  top: 0; /* This is needed to stick to the top */
-  z-index: 1000; /* High z-index to ensure the navbar is above other content */
 
+/* text colors */
+.text-color-primary {
+  color: var(--primary-color);
 }
 
-.navbar-container {
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 0 20px;
-  margin: 0 2vw
+.text-color-secondary {
+  color: var(--secondary-color);
 }
 
-.navbar-left {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.text-color-default {
+  color: var(--grey900);
 }
 
-.navbar-left > * + * {
-  margin: 0 2vw;
+.text-color-contrast {
+  color: white;
 }
 
-.navbar-left img {
-  height: 2.5vh;
-  align-items: center;
-  vertical-align: middle;
-  padding-bottom: 0.5vh;
-}
-
-.navbar-left a {
-  font-size: 0.9rem;
-  color: #000000;
-  text-decoration: none;
-  vertical-align: middle;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.navbar-right a {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-decoration: none;
-  vertical-align: middle;
-  color: var(--default);
-  padding: 0 1rem;
-}
-
-.nav-list {
-  padding: 0 20px;
+.text-color-tertiary {
+  color: var(--grey600);
 }
 
 
-
-Link {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-}
-
-Link:hover {
-  color: #a0aec0;
-}
-
-.my-link {
-  color: var(--bg-primary);
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.0625rem;
-  height: 3rem;
-  text-decoration: underline;
-  padding: 8px 15px;
-  display: inline-block;
-  border-radius: 5px;
-  transition: color 0.15s ease, background-color 0.15s ease;
-}
-
-.my-link:hover,
-.my-link:focus {
-  color: #ffffff;
-  background-color: #0070f3;
-}
-
-.hero-section {
-  
-  display: flex;
-  background-image: url("../public/hero-bg2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin-top: -60px; /* Pull the hero section up by the height of the navbar */
-  padding-top: 60px;
-
-}
-
-.hero-container {
+/* containers */
+.hero-wrapper {
   align-items: center; /* Align vertically */
   justify-content: flex-start; 
   display: flex;
@@ -282,11 +204,15 @@ Link:hover {
   height: 100vh;
 }
 
-.hero-header {
+.hero-content {
   flex-direction: column;
 }
+/*
+.hero-header {
 
-.content-container {
+}
+*/
+.content-wrapper {
   background-image: url("../public/background-texture-dots.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,95 +220,41 @@ Link:hover {
   display: block;
 }
 
-.button-double-container {
+.content {
+  padding: 8rem 0;
+}
+
+.section {
+  padding: 8vh 10vw;
+}
+
+.grid-x {
   display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
 }
 
-.button-primary {
-  border: none;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.5rem 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.0625rem;
-  height: 3rem;
-  cursor: pointer;
-  border-radius: 30px;
-  transition: background-color 0.3s, color 0.3s; /* Optional for a smooth color transition effect */
-}
-  
-
-
-.button-secondary {
-  border: 2px solid var(--primary-color); /* Replace 'green' with any color code you prefer */
-  background-color: transparent;
-  color: var(--primary-color);
-  padding: 0.5rem 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.0625rem;
-  height: 3rem;
-  cursor: pointer;
-  border-radius: 30px;
-  transition: background-color 0.3s, color 0.3s; /* Optional for a smooth color transition effect */
-}
-
-.section-txt-img-center {
-  padding: 8rem 10rem;
-}
-
-
-
-.section-txt-img-left {
-  padding: 8rem 10rem;
+.grid-y {
   display: flex;
-  align-items: center; /* Align vertically */
-
+  flex-direction: column;
 }
 
-.proj-text-container {
+.col {
   flex: 1;
 }
 
-.section-txt-img-right {
-  padding: 8rem 10rem;
-  display: flex;
-  align-items: center; /* Align vertically */
-
+.row {
+  flex: 1;
 }
 
-.proj1-img-container {
-  padding: 4rem 2vw 0 2vw;
+.align-center {
   align-items: center;
-  justify-content: center; 
-  display: flex;
 }
 
-.proj2-img-container {
-  padding: 0 2vw 0 2vw;
-  align-items: center;
-  justify-content: center; 
+.align-right {
   display: flex;
-}
+  justify-content: flex-end;}
 
-.proj3-img-container {
-  padding: 0 2vw 0 2vw;
-  align-items: center;
-  justify-content: center; 
-  display: flex;
+.align-left {
+  justify-content: flex-start;
 }
 
 body, main {

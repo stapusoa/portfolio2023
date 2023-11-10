@@ -1,0 +1,20 @@
+.proj1-img-container {
+    padding: 4rem 2vw 0 2vw;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+  }
+  
+  .proj2-img-container {
+    padding: 0 2vw 0 2vw;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+  }
+  
+  .proj3-img-container {
+    padding: 0 2vw 0 2vw;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+  }
