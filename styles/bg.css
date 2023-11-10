@@ -8,5 +8,52 @@
     padding-top: 60px;
 }
 
-
+.hero-bg-proj1 {
+    display: flex;
+    background-image: url("../public/fbprod-project-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
+    padding-top: 60px;
+}
     
+.hero-bg-proj2 {
+    display: flex;
+    background-image: url("../public/hm-project-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
+    padding-top: 60px;
+}
+
+.hero-bg-proj3 {
+    display: flex;
+    background-image: url("../public/tp-project-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
+    padding-top: 60px;
+}
+
+.hero-bg-about {
+    display: flex;
+    background-image: url("../public/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
+    padding-top: 60px;
+}
+
+.hero-bg-resume {
+    display: flex;
+    background-image: url("../public/paper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
+    padding-top: 60px;
+}

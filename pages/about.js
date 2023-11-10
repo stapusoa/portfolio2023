@@ -1,39 +1,291 @@
+import Image from 'next/image';
+import ButtonPrimary from '../components/ButtonPrimary';
 
-export default function About() {
-    return (
-      <div>
-        
-  
-  
-        <main className="min-h-screen">
-        <div className="hero-section">
-          <div className="hero-container">
-            <div className="hero-header">
-              <h4 className="text-4xl font-bold text-gray-900 dark:text-white">
-                about me
-              </h4>
-              <h1 className="mt-4 text-xl">
-                lorem ipsum
-              </h1>
-              <div className="mt-8 flex gap-4">
-                <button className="button-primary">
-                  Button 1
+export default function Proj1() {
+  return (
+    <div>
+      <main>
+        <div className="hero-bg-about">
+          <div className="hero-wrapper">
+            <div className="hero-content">
+              <div className="hero-header">
+                <h4 className="text-left text-color-primary">
+                  about me
+                </h4>
+                <h1 className="text-left text-color-secondary padding-horizontal">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat.                 
+                </h1>
+              </div>
+              <div className="button-double-container">
+                <ButtonPrimary className="button-primary">
+                  projects
+                </ButtonPrimary>                
+                <button className="button-secondary" onClick={() => window.open('https://github.com/yourusername', '_blank', 'noopener,noreferrer')}>
+                  linkedin
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="content-container">
-          <div className="section-list">
+        <div className="content-wrapper">
+          <div className="content">
+            <div className="section grid-x gap-default">
+              <div className="col">
+                <h2 className="text-left text-color-secondary">
+                  overview
+                </h2>
+                <h4 className="text-left text-color-default">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
+                </h4>
+              </div>
+              <div className="col padding-vertical gap-vertical">
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+              </div>
+            </div>
+            <div className="section grid-y gap-default">
+              <div className="row">
+                <h2 className="text-center text-color-secondary">
+                    problem framing
+                </h2>
+                <h4 className="text-center text-color-default">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
+                </h4>
+              </div>
+              <div className="row">
+                <div className="grid-x">
+                  <div className="col">
 
-          </div>
-          <div className="section-paragraph-block">
-            
+                  </div>
+                  <div className="col">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="section grid-x gap-default">
+              <div className="col">
+                <h2 className="text-left text-color-secondary">
+                  goal
+                </h2>
+                <h4 className="text-left text-color-default">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
+                </h4>
+              </div>
+              <div className="col padding-vertical gap-vertical">
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+              </div>
+            </div>
+
+
+            <div className="section grid-y gap-default">
+              <div className="row">
+                <h2 className="text-center text-color-secondary">
+                  user research
+                </h2>
+                <h4 className="text-center text-color-default">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
+                </h4>
+              </div>
+              <div className="row">
+                <div className="grid-x">
+                  <div className="col">
+
+                  </div>
+                  <div className="col">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="section grid-x gap-default">
+              <div className="col">
+                <h2 className="text-left text-color-secondary">
+                  insights
+                </h2>
+                <h4 className="text-left text-color-default">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
+                </h4>
+              </div>
+              <div className="col padding-vertical gap-vertical">
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+              </div>
+            </div>
+
+
+            <div className="section grid-x gap-default">
+              <div className="col">
+                <h2 className="text-left text-color-secondary">
+                  ideation
+                </h2>
+                <h4 className="text-left text-color-default">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
+                </h4>
+              </div>
+              <div className="col padding-vertical gap-vertical">
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+              </div>
+            </div>
+
+
+            <div className="section grid-y gap-default">
+              <div className="row">
+                <h2 className="text-center text-color-secondary">
+                  outcomes
+                </h2>
+                <h4 className="text-center text-color-default">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
+                </h4>
+              </div>
+              <div className="row">
+                <div className="grid-x">
+                  <div className="col">
+
+                  </div>
+                  <div className="col">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="section grid-x gap-default">
+              <div className="col">
+                <h2 className="text-left text-color-secondary">
+                  more works
+                </h2>
+                <h4 className="text-left text-color-default">
+                  Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
+                </h4>
+              </div>
+              <div className="col padding-vertical gap-vertical">
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+                <div>
+                  <h6 className="text-left text-color-secondary">
+                    role
+                  </h6>
+                  <h6 className="subtitle1 text-left text-color-default">
+                    Lorem ipsum dolor sit amet consectetur.                 
+                  </h6> 
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </main>
-  
-      </div>
-    )
-  }
-  
+    </div>
+  );
+}

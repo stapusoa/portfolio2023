@@ -72,7 +72,6 @@ h1 {
   line-height: 4rem;
   font-weight: 700;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 h2 {
@@ -80,7 +79,6 @@ h2 {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 h3 {
@@ -88,7 +86,6 @@ h3 {
   font-size: 2.5rem;
   font-weight: 500;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 h4 {
@@ -96,7 +93,6 @@ h4 {
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
-  color: var(--primary-color);
 }
 
 h5 {
@@ -104,7 +100,6 @@ h5 {
   font-size: 1.75rem;
   font-weight: 400;
   margin: 0;
-  color: var(--default);
 }
 
 h6 {
@@ -112,7 +107,6 @@ h6 {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 .subtitle1 {
@@ -120,7 +114,6 @@ h6 {
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 .subtitle2 {
@@ -128,7 +121,6 @@ h6 {
   font-size: 1.25rem;
   font-weight: 400;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 .body1-bold {
@@ -136,7 +128,6 @@ h6 {
   font-size: 1.125rem;
   font-weight: 700;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 .body1 {
@@ -144,7 +135,6 @@ h6 {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 .body2 {
@@ -152,7 +142,6 @@ h6 {
   font-size: 0.875rem;
   font-weight: 400;
   margin: 0;
-  color: var(--secondary-color);
 }
 
 
@@ -204,6 +193,16 @@ h6 {
   height: 100vh;
 }
 
+.hero-wrapper-gradient {
+  align-items: center; /* Align vertically */
+  justify-content: flex-start; 
+  display: flex;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.0));
+  background-size: cover;
+  padding: 0 10vw 0 10vw;
+  height: 100vh;
+}
+
 .hero-content {
   flex-direction: column;
 }
@@ -235,6 +234,24 @@ h6 {
 .grid-y {
   display: flex;
   flex-direction: column;
+}
+
+.gap-default {
+  gap: 4rem;
+}
+
+.gap-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.padding-vertical {
+  padding: 0.75rem 0;
+}
+
+.padding-horizontal {
+  padding-right: 30rem;
 }
 
 .col {

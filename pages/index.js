@@ -1,9 +1,7 @@
 // pages/index.js
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 import MyLink from '../components/MyLink';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'; // Import the icon
 import ButtonPrimary from '../components/ButtonPrimary';
 
 export default function Home() {
