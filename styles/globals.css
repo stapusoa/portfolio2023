@@ -97,21 +97,22 @@ h4 {
 
 h5 {
   font-family: 'Gilroy', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 150%;
   font-weight: 400;
   margin: 0;
 }
 
 h6 {
   font-family: 'Gilroy', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
 }
 
 .subtitle1 {
   font-family: 'Gilroy', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-weight: 400;
   margin: 0;
 }
@@ -237,13 +238,17 @@ h6 {
 }
 
 .gap-default {
-  gap: 4rem;
+  gap: 8rem;
+}
+
+.gap-secondary {
+  gap: 2rem;
 }
 
 .gap-vertical {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .padding-vertical {
