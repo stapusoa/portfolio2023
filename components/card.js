@@ -20,7 +20,7 @@ const HeaderContainer = styled.div`
 
 const CardIconWrapper = styled.div`
   font-size: 48px;
-  color: #007bff;
+  color: #81B29A;
 `;
 
 const CardHeader = Body1;
