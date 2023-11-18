@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import ButtonPrimary from '../components/ButtonPrimary';
 
-export default function Proj1() {
+export default function Resume() {
   return (
     <div>
       <main>

@@ -274,7 +274,7 @@ export default function Proj2() {
                   goal
                 </h2>
                 <h5 className="text-left text-color-default">
-                  To successfully launch Fishbowl Go, a user-friendly iPad/tablet app, designed to bridge the gap in mobile inventory management for small to medium-sized businesses. Our aim was to simplify administrative tasks, making inventory management as efficient on tablets as it is on desktops. The goal was to enhance operational efficiency by at least 20% and improve user satisfaction, targeting a 15% increase in Fishbowl Inventory's client base within the first six months after launch.              
+                  To successfully launch Fishbowl Go, a user-friendly iPad/tablet app, designed to bridge the gap in mobile inventory management for small to medium-sized businesses. Our aim was to simplify administrative tasks, making inventory management as efficient on tablets as it is on desktops. The goal was to enhance operational efficiency by at least 20% and improve user satisfaction, targeting a 15% increase in Fishbowl Inventory&apos;s client base within the first six months after launch.              
                 </h5>
               </div>
               <div className="img50">
@@ -323,7 +323,7 @@ export default function Proj2() {
                   <CardNumbered 
                     number="4"
                     title="Simplicity"
-                    description="There's a significant demand for a user-friendly, mobile platform that integrates with existing systems, allowing efficient and flexible management of inventory tasks."
+                    description="There&apos;s a significant demand for a user-friendly, mobile platform that integrates with existing systems, allowing efficient and flexible management of inventory tasks."
                   />
                 </div>
               </div>
@@ -366,7 +366,7 @@ export default function Proj2() {
                   insights
                 </h2>
                 <h5 className="text-left text-color-default">
-                  During the Fishbowl Go project, we identified a crucial user experience issue: several actions within the app were ambiguous regarding their completion status. Users frequently expressed uncertainty about whether their actions, such as inventory updates or order processing, were successfully executed. To enhance clarity and user confidence, we propose integrating more explicit feedback mechanisms into the app's workflow. This approach includes the implementation of toast messages and clear visual indicators to affirm that an action has been successfully completed. These additions are aimed at reducing user frustration and improving the overall efficiency and user satisfaction with the app.                
+                  During the Fishbowl Go project, we identified a crucial user experience issue: several actions within the app were ambiguous regarding their completion status. Users frequently expressed uncertainty about whether their actions, such as inventory updates or order processing, were successfully executed. To enhance clarity and user confidence, we propose integrating more explicit feedback mechanisms into the app&apos;s workflow. This approach includes the implementation of toast messages and clear visual indicators to affirm that an action has been successfully completed. These additions are aimed at reducing user frustration and improving the overall efficiency and user satisfaction with the app.                
                 </h5>
               </div>
               <div className="col padding-vertical gap-vertical">
@@ -444,7 +444,7 @@ export default function Proj2() {
                   outcomes
                 </h2>
                 <h5 className="text-left text-color-default">
-                  Due to time constraints, I decided to take what I learned during the wireframe tests, and move directly to a high-fidelity prototype. My strategy was to address the specific points of friction through careful attention to copy and to make sure the design patterns I’d apply were as clear as possible — and consistent with the overall Venmo experience. Testing was generally successful — most tasks were completed by testers at a success rate of 72% or higher. The path to apply for a loan, however, failed. At the point of realizing what they were about to commit to, users either bounced, or seemed to click back and forth between disclosures and the approval step. Qualitative feedback also revealed several users' issues with better understanding the relationship between their "friends" and "borrowers," or financial literacy in general.                
+                  Due to time constraints, I decided to take what I learned during the wireframe tests, and move directly to a high-fidelity prototype. My strategy was to address the specific points of friction through careful attention to copy and to make sure the design patterns I’d apply were as clear as possible — and consistent with the overall Venmo experience. Testing was generally successful — most tasks were completed by testers at a success rate of 72% or higher. The path to apply for a loan, however, failed. At the point of realizing what they were about to commit to, users either bounced, or seemed to click back and forth between disclosures and the approval step. Qualitative feedback also revealed several users&apos; issues with better understanding the relationship between their "friends" and "borrowers," or financial literacy in general.                
                 </h5>
               </div>
               <div className="col padding-vertical gap-vertical">
