@@ -73,25 +73,28 @@ const journey = [
   // Add more steps as needed
 ];
 
-export default function Proj2() {
+export default function Proj4() {
   return (
     <div>
       <main>
-        <div className="hero-bg-proj2">
+        <div className="hero-bg-proj3">
           <div className="hero-wrapper-gradient">
             <div className="hero-content">
               <div className="hero-header">
                 <h4 className="text-left text-color-primary">
-                  haven massage
+                  travelpass
                 </h4>
                 <h1 className="text-left text-color-secondary padding-horizontal">
-                  providing professional therapeutic services through easy booking.            
+                  providing the explorer at heart unforgettable adventures.              
                 </h1>
               </div>
               <div className="button-double-container">
                 <ButtonPrimary className="button-primary">
                   prototype
                 </ButtonPrimary>                
+                <button className="button-secondary" onClick={() => window.open('https://github.com/yourusername', '_blank', 'noopener,noreferrer')}>
+                  website
+                </button>
               </div>
             </div>
           </div>

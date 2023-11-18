@@ -124,13 +124,12 @@ export default function Proj1() {
                 </div>
                 
               </div>
-              <div className="col">
+              <div className="img50">
                 <Image
                   src="/fishbowl.png" // The path to your image file, relative to the public directory
-                  alt="Goal" // Alternative text for the image
-                  width={900} // The width of the image in pixels
-                  height={400} // The height of the image in pixels
-                  layout="intrinsic" // Optional: Defines how the image should be resized and positioned
+                  alt="Fishbowl" // Alternative text for the image
+                  layout="fill"
+                  objectFit="contain"
                 />   
               </div>
             </div>
@@ -281,19 +280,18 @@ export default function Proj1() {
                   To successfully launch Fishbowl Go, a user-friendly iPad/tablet app, designed to bridge the gap in mobile inventory management for small to medium-sized businesses. Our aim was to simplify administrative tasks, making inventory management as efficient on tablets as it is on desktops. The goal was to enhance operational efficiency by at least 20% and improve user satisfaction, targeting a 15% increase in Fishbowl Inventory's client base within the first six months after launch.              
                 </h5>
               </div>
-              <div className="col">
+              <div className="img50">
                 <Image
-                  src="/goal.jpg" // The path to your image file, relative to the public directory
-                  alt="Goal" // Alternative text for the image
-                  width={1200} // The width of the image in pixels
-                  height={300} // The height of the image in pixels
-                  layout="intrinsic" // Optional: Defines how the image should be resized and positioned
-                />   
+                  src="/goal.jpg"
+                  alt="Goal"
+                  layout="fill"
+                  objectFit="contain" // Optional: you can adjust as needed
+                />
               </div>
             </div>
 
 
-            <div className="section grid-y gap-default">
+            <div className="section grid-y gap-default"> 
               <div className="row gap-vertical">
                 <h2 className="text-center text-color-secondary">
                   understanding the user
@@ -331,44 +329,38 @@ export default function Proj1() {
                     description="There's a significant demand for a user-friendly, mobile platform that integrates with existing systems, allowing efficient and flexible management of inventory tasks."
                   />
                 </div>
-                    
-                    
-                  
               </div>
-              <h3 className="text-center text-color-primary">
-                  meet these users
-              </h3>
-              <div className="grid-x gap-secondary">
-                <div className="col"> 
-                  <CardUserPersona persona={userPersona1} />
-                </div>
-                <div className="col"> 
-                  <CardUserPersona persona={userPersona2} />
-                </div>
-                <div className="col"> 
-                  <CardUserPersona persona={userPersona3} />
-                </div>
-                <div className="col"> 
-                  <CardUserPersona persona={userPersona4} />
+            </div>
+            <div className="section grid-y gap-default">
+              <div className="row gap-vertical">
+                <h3 className="text-center text-color-primary">
+                    meet these users
+                </h3>
+                <div className="grid-x gap-secondary">
+                  <div className="col"> 
+                    <CardUserPersona persona={userPersona1} />
+                  </div>
+                  <div className="col"> 
+                    <CardUserPersona persona={userPersona2} />
+                  </div>
+                  <div className="col"> 
+                    <CardUserPersona persona={userPersona3} />
+                  </div>
+                  <div className="col"> 
+                    <CardUserPersona persona={userPersona4} />
+                  </div>
                 </div>
               </div>
-
-              <h3 className="text-center text-color-primary">
-                  user journey map
-              </h3>
-              <div className="grid-x">
-              <UserJourneyMap user={user} journey={journey} />
+            </div>
+            <div className="section grid-y gap-default">
+              <div className="row gap-vertical">
+                <h3 className="text-center text-color-primary">
+                    user journey map
+                </h3>
+                <div className="grid-x">
+                <UserJourneyMap user={user} journey={journey} />
+                </div>
               </div>
-              
-                
-              
-                    
-                    
-                  
-                    
-                    
-                  
-
             </div>
 
             <div className="section grid-x gap-default">
@@ -405,6 +397,15 @@ export default function Proj1() {
                     Strengthen the app’s feedback loop by providing distinct auditory or haptic feedback for completed actions, enhancing the user experience for those relying on different sensory inputs.                
                   </h6> 
                 </div>
+                <div className="img50">
+                  <Image
+                    src="/fb-wireframes.jpg" // The path to your image file, relative to the public directory
+                    alt="Fishbowl" // Alternative text for the image
+                    layout="fill"
+                    objectFit="contain"
+                  />  
+
+                </div>
               </div>
             </div>
 
@@ -420,12 +421,13 @@ export default function Proj1() {
               </div>
               <div className="proj3-img-container">
                 <Image
-                    src="/fbgo-sketches-long.jpg" // The path to your image file, relative to the public directory
-                    alt="Project Image" // Alternative text for the image
-                    width={1100} // The width of the image in pixels
-                    height={300} // The height of the image in pixels
-                    layout="intrinsic" // Optional: Defines how the image should be resized and positioned
-                  />   
+                  src="/fbgo-sketches-long.jpg" // The path to your image file, relative to the public directory
+                  alt="Fishbowl" // Alternative text for the image
+                  width={1100} // The width of the image in pixels
+                  height={400}
+                />  
+
+                
               </div>
                     
                    
@@ -437,7 +439,7 @@ export default function Proj1() {
                   
 
             </div>
-
+  
 
             <div className="section grid-x gap-default">
               <div className="col gap-vertical">
@@ -445,7 +447,7 @@ export default function Proj1() {
                   outcomes
                 </h2>
                 <h5 className="text-left text-color-default">
-                  During the Fishbowl Go project, we identified a crucial user experience issue: several actions within the app were ambiguous regarding their completion status. Users frequently expressed uncertainty about whether their actions, such as inventory updates or order processing, were successfully executed. To enhance clarity and user confidence, we propose integrating more explicit feedback mechanisms into the app's workflow. This approach includes the implementation of toast messages and clear visual indicators to affirm that an action has been successfully completed. These additions are aimed at reducing user frustration and improving the overall efficiency and user satisfaction with the app.                
+                  Due to time constraints, I decided to take what I learned during the wireframe tests, and move directly to a high-fidelity prototype. My strategy was to address the specific points of friction through careful attention to copy and to make sure the design patterns I’d apply were as clear as possible — and consistent with the overall Venmo experience. Testing was generally successful — most tasks were completed by testers at a success rate of 72% or higher. The path to apply for a loan, however, failed. At the point of realizing what they were about to commit to, users either bounced, or seemed to click back and forth between disclosures and the approval step. Qualitative feedback also revealed several users' issues with better understanding the relationship between their "friends" and "borrowers," or financial literacy in general.                
                 </h5>
               </div>
               <div className="col padding-vertical gap-vertical">
@@ -473,14 +475,14 @@ export default function Proj1() {
                     Strengthen the app’s feedback loop by providing distinct auditory or haptic feedback for completed actions, enhancing the user experience for those relying on different sensory inputs.                
                   </h6> 
                 </div>
-                <div>
+                <div className="img50">
                   <Image
-                    src="/fb-wireframes.jpg" // The path to your image file, relative to the public directory
-                    alt="Project Image" // Alternative text for the image
-                    width={500} // The width of the image in pixels
-                    height={300} // The height of the image in pixels
-                    layout="intrinsic" // Optional: Defines how the image should be resized and positioned
-                  />   
+                    src="/fishbowl.jpg" // The path to your image file, relative to the public directory
+                    alt="Fishbowl" // Alternative text for the image
+                    layout="fill"
+                    objectFit="contain"
+                  />  
+
                 </div>
                 
 

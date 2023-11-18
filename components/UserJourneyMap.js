@@ -7,7 +7,7 @@ const JourneyMapWrapper = styled.div`
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  display: table;
+  display: block;
 `;
 
 const Header = styled.div`
@@ -26,7 +26,9 @@ const UserGoal = styled.p`
   font-family: 'Gilroy', sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
+  color: #616972;
   margin: 0;
+  padding: 0;
 `;
 
 const Table = styled.div`
@@ -42,20 +44,29 @@ const TableRow = styled.div`
 const TableCell = styled.div`
   display: table-cell;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
   vertical-align: top;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #616972;
 `;
 
 const TableLabel = styled.div`
   display: table-cell;
   padding: 10px;
   border: none;
-  vertical-align: top;
+  vertical-align: middle;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
 `;
 
 const TableHeader = styled(TableCell)`
-  font-weight: bold;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
   background-color: #81B29A;
+  color: white;
   text-align: center;
   border-radius: 8px;
   margin: 0 1rem;

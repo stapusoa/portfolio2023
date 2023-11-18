@@ -18,3 +18,11 @@
     justify-content: center; 
     display: flex;
   }
+
+  .img-fill {
+    padding: 0 2vw 0 2vw;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+
+  }

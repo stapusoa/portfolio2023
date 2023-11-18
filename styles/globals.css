@@ -283,6 +283,11 @@ h6 {
   justify-content: flex-start;
 }
 
+.img50 {
+  position: relative;
+  flex: 1;
+}
+
 body, main {
   margin: 0;
   padding: 0;
