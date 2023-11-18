@@ -1,13 +1,14 @@
 import styled from 'styled-components';
-import { Heading6, Body1 } from './typography'; // Import your typography styles
 
 const CardWrapper = styled.div`
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 20px;
+  background-color: white;
   padding: 16px;
   margin: 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
+  height: 28vh;
   flex-direction: column; // Stack children vertically
 `;
 
@@ -23,9 +24,27 @@ const CardIconWrapper = styled.div`
   color: #81B29A;
 `;
 
-const CardHeader = Body1;
-const CardTitle = Heading6;
-const CardDescription = Body1;
+const CardHeader = styled.p`
+  font-family: 'Gilroy', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #999BA6;
+`;
+
+const CardTitle = styled.h6`
+  font-family: 'Gilroy', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+  color: #3D405B;
+`;
+
+const CardDescription = styled.p`
+  font-family: 'Gilroy', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #616972;
+`;
 
 const Card = ({ header, title, description, Icon }) => (
   <CardWrapper>

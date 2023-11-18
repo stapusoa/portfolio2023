@@ -259,6 +259,10 @@ h6 {
   padding-right: 30rem;
 }
 
+.padding-horizontal2 {
+  padding-right: 1rem;
+}
+
 .col {
   flex: 1;
 }

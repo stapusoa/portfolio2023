@@ -1,3 +1,5 @@
+import React from 'react';
+import Badge from '../components/badge'; 
 import Image from 'next/image';
 import ButtonPrimary from '../components/ButtonPrimary';
 import Card from '../components/card';
@@ -9,6 +11,8 @@ import CardNumbered from '../components/CardNumbered';
 import CardUserPersona from '../components/CardUserPersona';
 import UserJourneyMap from '../components/UserJourneyMap';
 import BlogCard from '../components/BlogCard';
+import DevicesIcon from '@mui/icons-material/Devices';
+
 
 const userPersona1 = {
   name: "Jennifer G",
@@ -97,16 +101,40 @@ export default function Proj1() {
         </div>
         <div className="content-wrapper">
           <div className="content">
-            <div className="section grid-x gap-default">
+            <div className="section grid-x ">
               <div className="col gap-vertical">
                 <h2 className="text-left text-color-secondary">
                   overview
                 </h2>
-                <h5 className="text-left text-color-default">
-                  Fishbowl Go is an intuitive app designed for Fishbowl Inventory clients, tailored for iPad and tablet use. Bridging the gap between desktop and mobile, it simplifies inventory management for small to medium-sized businesses. This companion app to the warehouse-focused mobile version streamlines administrative tasks, enhancing productivity with easy-to-use features for inventory tracking and order processing.              
-                </h5>
+                <div className="grid-x">
+                  <div className="col padding-horizontal2">
+                    <Badge icon={DevicesIcon} />
+                  </div>
+                  <h5 className="text-left text-color-default">
+                    <strong>The product</strong> - Fishbowl Go is an app designed for Fishbowl Inventory clients, tailored for warehouse tasks. It serves as a powerful tool to streamline sales orders, manufacture orders, and other tasks for inventory management.
+                  </h5>
+                </div>
+                <div className="grid-x">
+                  <div className="col padding-horizontal2">
+                    <Badge icon={AccessTimeIcon} />
+                  </div>
+                  <h5 className="text-left text-color-default">
+                    <strong>Project duration</strong> - Originally, the project was roadmapped for a month reskinning of the mobile native app. Through research and brainstorming, the project specs changed. We worked on it from January 2021 to September 2021.
+                  </h5>
+                </div>
+                
               </div>
-              <div className="col padding-vertical gap-vertical">
+              <div className="col">
+                <Image
+                  src="/fishbowl.png" // The path to your image file, relative to the public directory
+                  alt="Goal" // Alternative text for the image
+                  width={900} // The width of the image in pixels
+                  height={400} // The height of the image in pixels
+                  layout="intrinsic" // Optional: Defines how the image should be resized and positioned
+                />   
+              </div>
+            </div>
+            <div className="section grid-x gap-default">
                 <div>
                   <h6 className="text-left text-color-secondary">
                     role
@@ -198,16 +226,15 @@ export default function Proj1() {
                     </li>
                   </ul>
                 </div>
-              </div>
             </div>
+            
             <div className="section grid-y gap-default">
               <div className="row gap-vertical">
                 <h2 className="text-center text-color-secondary">
                   problem framing
                 </h2>
                 <h5 className="text-center text-color-default">
-                  Small to medium-sized businesses often struggle with efficient inventory management due to the limitations of desktop-only software solutions. This challenge is compounded when they need to perform administrative tasks remotely or on-the-go. Existing mobile applications primarily cater to warehouse operations, leaving a gap in streamlined, mobile-accessible inventory management for administrative purposes. Fishbowl Inventory clients, in particular, require an agile, tablet-friendly solution that integrates seamlessly with their current systems, enabling effective management of inventory, orders, and data away from the desktop environment.                
-                </h5>
+                  Businesses face difficulties in managing inventory efficiently due to desktop-only software limitations. This issue intensifies when they need to manage tasks remotely. Current mobile apps focus mainly on warehouse activities, creating a need for a mobile-friendly inventory management tool for administrative tasks. Fishbowl Inventory clients specifically need a tablet-compatible solution that integrates with their existing systems for effective inventory, order, and data management outside the office.                </h5>
               </div>
               <div className="row">
                 <div className="grid-x gap-secondary">
@@ -215,13 +242,13 @@ export default function Proj1() {
                     <Card 
                       header="who"
                       title="Who is experiencing the problem?"
-                      description="An intuitive inventory management app for small to medium-sized businesses."
+                      description="Small to medium-sized businesses using inventory management systems, specifically clients of Fishbowl Inventory."
                       Icon={PersonOutlineIcon}
                     />
                     <Card 
                       header="when"
                       title="When does the problem occur?"
-                      description="An intuitive inventory management app for small to medium-sized businesses."
+                      description="The problem arises when these businesses need to perform inventory management and administrative tasks remotely, such as when they are away from the office or do not have access to desktop systems."
                       Icon={AccessTimeIcon}
                     />
                   </div>
@@ -229,13 +256,13 @@ export default function Proj1() {
                     <Card 
                       header="where"
                       title="Where does the user experience the problem?"
-                      description="An intuitive inventory management app for small to medium-sized businesses."
+                      description="The problem occurs in environments where these businesses need to manage inventory and administrative tasks remotely or on-the-go, outside of a traditional desktop setup."
                       Icon={PlaceOutlinedIcon}
                     />
                     <Card 
                       header="why"
                       title="Why does this pain point matter to the user?"
-                      description="An intuitive inventory management app for small to medium-sized businesses."
+                      description="Efficient inventory management is key to the success of small and medium-sized businesses. Poor mobile solutions limit their capability to manage inventory remotely, leading to issues in order management, data access, and business agility, thus affecting productivity and possibly revenue."
                       Icon={FavoriteBorderOutlinedIcon}
                     />
 
@@ -393,9 +420,9 @@ export default function Proj1() {
               </div>
               <div className="proj3-img-container">
                 <Image
-                    src="/tp-project-img.jpg" // The path to your image file, relative to the public directory
+                    src="/fbgo-sketches-long.jpg" // The path to your image file, relative to the public directory
                     alt="Project Image" // Alternative text for the image
-                    width={700} // The width of the image in pixels
+                    width={1100} // The width of the image in pixels
                     height={300} // The height of the image in pixels
                     layout="intrinsic" // Optional: Defines how the image should be resized and positioned
                   />   
@@ -446,6 +473,18 @@ export default function Proj1() {
                     Strengthen the app’s feedback loop by providing distinct auditory or haptic feedback for completed actions, enhancing the user experience for those relying on different sensory inputs.                
                   </h6> 
                 </div>
+                <div className="proj3-img-container">
+                <Image
+                    src="/fb-wireframes.jpg" // The path to your image file, relative to the public directory
+                    alt="Project Image" // Alternative text for the image
+                    width={600} // The width of the image in pixels
+                    height={300} // The height of the image in pixels
+                    layout="intrinsic" // Optional: Defines how the image should be resized and positioned
+                  />   
+                </div>
+
+
+
               </div>
             </div>
 
