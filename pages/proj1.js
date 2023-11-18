@@ -473,15 +473,16 @@ export default function Proj1() {
                     Strengthen the app’s feedback loop by providing distinct auditory or haptic feedback for completed actions, enhancing the user experience for those relying on different sensory inputs.                
                   </h6> 
                 </div>
-                <div className="proj3-img-container">
-                <Image
+                <div>
+                  <Image
                     src="/fb-wireframes.jpg" // The path to your image file, relative to the public directory
                     alt="Project Image" // Alternative text for the image
-                    width={600} // The width of the image in pixels
+                    width={500} // The width of the image in pixels
                     height={300} // The height of the image in pixels
                     layout="intrinsic" // Optional: Defines how the image should be resized and positioned
                   />   
                 </div>
+                
 
 
 
