@@ -64,24 +64,50 @@ nav {
 }
 
 .menu-icon {
-    display: none; /* Hide menu icon by default */
+    display: none; 
     cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white; /* adjust as per your color scheme */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1001;
+    width: 200px; /* Adjust width as needed */
+}
+  
+.mobile-menu.active {
+    display: block;
 }
   
 @media (max-width: 930px) {
     .menu-icon {
         display: block; /* Show menu icon on smaller screens */
     }
-
+  
     .navbar-right {
-        display: none; /* Hide navbar links on smaller screens */
-    }
-
-    .navbar-right.active {
-        display: flex; /* Show navbar links when active */
-        flex-direction: column; /* Stack links vertically */
+        display: none; /* Hide desktop navbar links on smaller screens */
     }
 }
+  
+
+/* Styling for the mobile menu links */
+.mobile-menu a {
+    padding: 10px 15px;
+    display: block;
+    color: #333; /* adjust as per your color scheme */
+    text-decoration: none;
+    font-size: 1rem;
+}
+  
+.mobile-menu a:hover {
+    background-color: #f2f2f2; /* adjust as per your color scheme */
+}
+
+  
 
 /* link */
 .link-container {
