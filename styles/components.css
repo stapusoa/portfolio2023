@@ -59,10 +59,6 @@ nav {
     padding: 0 20px;
 }
 
-.menu-container {
-    position: relative;
-}
-
 .menu-icon {
     display: none; 
     cursor: pointer;
@@ -71,12 +67,15 @@ nav {
 .mobile-menu {
     display: none;
     position: absolute;
-    right: 0;
+    right: 24px;
+    top: 48px;
     background-color: white; /* adjust as per your color scheme */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: 1px solid #E4E5EE;
+    border-radius: 12px;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.10);
     z-index: 1001;
     width: 200px; /* Adjust width as needed */
+    overflow: hidden;
 }
   
 .mobile-menu.active {
@@ -96,11 +95,13 @@ nav {
 
 /* Styling for the mobile menu links */
 .mobile-menu a {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
     padding: 10px 15px;
     display: block;
     color: #333; /* adjust as per your color scheme */
-    text-decoration: none;
-    font-size: 1rem;
 }
   
 .mobile-menu a:hover {

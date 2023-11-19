@@ -46,10 +46,9 @@ export default function Navbar() {
           <Link href="/resume">resume</Link>
         </div>
         <div className="mobile-menu">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/">work</Link>
+          <Link href="/about">about</Link>
+          <Link href="/resume">resume</Link>
         </div>
       </div>
     </nav>
