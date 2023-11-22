@@ -1,71 +1,95 @@
-.hero-bg-home {
-    display: flex;
-    background-image: url("../public/hero-bg-main.jpg");
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: top right;
-    background-attachment: fixed;
-    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
-    padding-top: 60px;
-}
+@media (min-width: 319px) {
+    .hero-bg-home {
+        background-image: url("../public/hero-bg-main.jpg");
+        background-repeat: no-repeat;
+        background-size: 300%;
+        background-position: top right;
+        background-attachment: fixed;
+        margin-top: -5rem; /* Pull the hero section up by the height of the navbar */
+        padding-top: 5rem;
+    }
 
-/* .hero-bg-home {
-    display: flex;
-    background-image: url("../public/hero-bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: -60px; 
-    padding-top: 60px;
-} 
-*/
+    .hero-bg-proj1 {
+        background-image: url("../public/fbprod-project-image.jpg");
+        background-repeat: no-repeat;
+        background-size: 300%;
+        background-attachment: fixed;
+        margin-top: -5rem; 
+        padding-top: 5rem;
+    }
 
-.hero-bg-proj1 {
-    display: flex;
-    background-image: url("../public/fbprod-project-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
-    padding-top: 60px;
-}
+    .hero-bg-proj2 {
+        display: flex;
+        background-image: url("../public/hm-project-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -5rem; 
+        padding-top: 5rem;
+    }
     
-.hero-bg-proj2 {
-    display: flex;
-    background-image: url("../public/hm-project-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
-    padding-top: 60px;
+    .hero-bg-proj3 {
+        display: flex;
+        background-image: url("../public/tp-project-img.jpg");
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-attachment: fixed;
+        margin-top: -5rem; 
+        padding-top: 5rem;
+    }
+    
+    .hero-bg-about {
+        display: flex;
+        background-image: url("../public/about-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -5rem; 
+        padding-top: 5rem;
+    }
+    
+    .hero-bg-resume {
+        display: flex;
+        background-image: url("../public/paper.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -5rem; 
+        padding-top: 5rem;
+    }
+
 }
 
-.hero-bg-proj3 {
-    display: flex;
-    background-image: url("../public/tp-project-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
-    padding-top: 60px;
+@media (min-width: 600px) {
+    .hero-bg-home {
+        /*display: flex;*/
+        background-image: url("../public/hero-bg-main.jpg");
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: top right;
+        background-attachment: fixed;
+        margin-top: -5rem; /* Pull the hero section up by the height of the navbar */
+        padding-top: 5rem;
+    }
+
+    .hero-bg-proj1 {
+        background-image: url("../public/fbprod-project-image.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        margin-top: -5rem; 
+        padding-top: 5rem;
+    }
+
+    .hero-bg-proj3 {
+        display: flex;
+        background-image: url("../public/tp-project-img.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center right;
+        background-attachment: fixed;
+        margin-top: -5rem; 
+        padding-top: 5rem;
+    }
 }
 
-.hero-bg-about {
-    display: flex;
-    background-image: url("../public/about-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
-    padding-top: 60px;
-}
-
-.hero-bg-resume {
-    display: flex;
-    background-image: url("../public/paper.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: -60px; /* Pull the hero section up by the height of the navbar */
-    padding-top: 60px;
-}

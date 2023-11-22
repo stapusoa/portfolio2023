@@ -28,13 +28,17 @@ export default function Navbar() {
       <div className="navbar-container">
         <div className="navbar-left">
           <Link href="/">
-            <Image
-                src="/logo-green.svg" // Assuming logo-green.svg is in the public/ directory
-                alt="ST"
-                width={150} // Define the size of the logo
-                height={50}
-                style={{ paddingBottom: '0' }}
-              />          
+            <div className="logo-container">
+              <Image
+                  src="/logo-green.svg" // Assuming logo-green.svg is in the public/ directory
+                  alt="ST"
+                  layout="responsive"
+                  width={202.4}
+                  height={24}
+                  objectFit="contain"
+                  
+              />      
+            </div>    
           </Link>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
