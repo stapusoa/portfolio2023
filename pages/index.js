@@ -10,10 +10,13 @@ export default function Home() {
       <Head>
         <title>My Portfolio</title>
         <meta name="description" content="Welcome to my personal portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        
         <div className="hero-bg-home">
           <div className="hero-wrapper">
             <div className="hero-content">
@@ -105,7 +108,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+  
         {/*
         <div className="content-wrapper">
           <div className="content" id="projects-section">

@@ -1,3 +1,9 @@
+body, main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 /* fonts */
 @font-face {
   font-family: 'Gilroy';
@@ -64,86 +70,6 @@
   --bg-transparent: transparent;
 }
 
-
-/* typography */
-h1 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 4rem;
-  line-height: 4rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-h2 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-h3 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin: 0;
-}
-
-h4 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-h5 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1.5rem;
-  line-height: 150%;
-  font-weight: 400;
-  margin: 0;
-}
-
-h6 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.subtitle1 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-.subtitle2 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-.body1-bold {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.body1 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-.body2 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  margin: 0;
-}
 
 
 /* text alignment */
@@ -302,8 +228,265 @@ h6 {
   flex: 1;
 }
 
-body, main {
-  margin: 0;
-  padding: 0;
+
+@media (min-width: 319px) {
+  /* typography */
+  h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  h4 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h5 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.15rem;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h6 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .subtitle1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .subtitle2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .body1-bold {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .body1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .body2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  
 }
+
+
+
+@media (min-width: 680px) {
+  /* typography */
+  h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  h4 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h5 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h6 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .subtitle1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .subtitle2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .body1-bold {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .body1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .body2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+}
+
+
+@media (min-width: 1440px) {
+  /* typography */
+  h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  h4 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h5 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h6 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .subtitle1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .subtitle2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .body1-bold {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .body1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .body2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+
+  
+    
+}
+
+
+
+
+
+
 
