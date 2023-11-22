@@ -233,6 +233,11 @@ h6 {
   display: flex;
 }
 
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
 .grid-y {
   display: flex;
   flex-direction: column;
@@ -240,6 +245,10 @@ h6 {
 
 .gap-default {
   gap: 8rem;
+}
+
+.gap-4 {
+  gap: 4rem;
 }
 
 .gap-secondary {
@@ -270,6 +279,10 @@ h6 {
 
 .row {
   flex: 1;
+}
+
+.text-block {
+  width: 50%;
 }
 
 .align-center {
