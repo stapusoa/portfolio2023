@@ -6,13 +6,20 @@ import '../styles/components.css';
 
 const FooterWrapper = styled.footer`
   width: 100%;
-  height: 80px;
+  height: auto; // Changed from 80px to auto for variable height
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   box-sizing: border-box;
+  flex-direction: row; // Default to row
+
+  @media (max-width: 768px) { // Adjust breakpoint as needed
+    flex-direction: column;
+    text-align: center; // Center align the text for small screens
+  }
 `;
+
 
 
 const CopyRightText = styled.span`
@@ -27,17 +34,28 @@ const CopyRightText = styled.span`
 const LinksContainer = styled.div`
   display: flex;
   align-items: center;
+  flex-direction: row; // Default to row
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 20px; // Add some space between the items
+  }
 `;
 
 const Link = styled.div`
-font-family: 'Gilroy', sans-serif;
-font-size: 1.25rem;
-font-weight: 500;
-text-decoration: none;
-vertical-align: middle;
-color: #353535;
-padding: 0 1rem;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #353535;
+  padding: 0 1rem;
+
+  @media (max-width: 768px) {
+    padding: 10px 0; // Adjust padding for smaller screens
+  }
 `;
+
 
 const Footer = () => {
   return (
