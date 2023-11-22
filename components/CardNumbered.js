@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Heading6, Body1 } from './typography'; // Import your typography styles
-import '../styles/globals.css';
 
 const CardWrapper = styled.div`
   position: relative;

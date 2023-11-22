@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import '../styles/globals.css';
 
 export const Heading1 = styled.h1`
     font-family: 'Gilroy', sans-serif;

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Heading3, Subtitle1 } from './typography'; // Import your typography styles
-import '../styles/globals.css';
 import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 

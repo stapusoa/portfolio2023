@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image'; // Import the Image component from next/image
-import '../styles/components.css';
 
 
 const FooterWrapper = styled.footer`
