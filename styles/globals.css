@@ -295,13 +295,15 @@ body, main {
   }
   
   .gap-secondary {
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;  
   }
   
   .gap-vertical {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
   }
   
   .padding-vertical {

@@ -8,8 +8,19 @@ const CardWrapper = styled.div`
   margin: 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
-  height: 28vh;
   flex-direction: column; // Stack children vertically
+
+  @media (min-width: 319px) {
+    height: 64vh;
+  }
+
+  @media (min-width: 600px) {
+    height: 50vh
+  }
+
+  @media (min-width: 1440px) {
+    height: 28vh;
+  }
 `;
 
 const HeaderContainer = styled.div`
