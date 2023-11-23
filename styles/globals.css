@@ -139,9 +139,7 @@ body, main {
   display: block;
 }
 
-.content {
-  padding: 8rem 0;
-}
+
 
 
 
@@ -264,6 +262,10 @@ body, main {
     height: 100vh;
     margin-top: -5rem; 
     padding-top: 5rem;
+  }
+
+  .content {
+    padding: 2rem 0;
   }
 
   .section {
@@ -468,6 +470,10 @@ body, main {
     padding-top: 5rem;
   }
 
+  .content {
+    padding: 8rem 0;
+  }
+
   .section {
     padding: 8vh 10vw;
   }
@@ -670,6 +676,10 @@ body, main {
     height: 100vh;
     margin-top: -5rem; 
     padding-top: 5rem;
+  }
+
+  .content {
+    padding: 8rem 0;
   }
 
   .section {
