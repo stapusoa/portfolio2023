@@ -101,7 +101,8 @@ export default function Proj4() {
             </div>
           </div>
           <div className="content-wrapper">
-            <div className="content">
+            <div className="content" id="projects-section">
+              {/* Overview */}
               <div className="section grid-x ">
                 <div className="col gap-vertical">
                   <h2 className="text-left text-color-secondary">
@@ -123,7 +124,6 @@ export default function Proj4() {
                       <strong>Project duration</strong> - Originally, the project was roadmapped for a month reskinning of the mobile native app. Through research and brainstorming, the project specs changed. We worked on it from January 2021 to September 2021.
                     </h5>
                   </div>
-                  
                 </div>
                 <div className="img50">
                   <Image
@@ -134,6 +134,7 @@ export default function Proj4() {
                   />   
                 </div>
               </div>
+              {/* Roles */}
               <div className="section grid-x gap-default">
                   <div>
                     <h6 className="text-left text-color-secondary">
@@ -227,7 +228,7 @@ export default function Proj4() {
                     </ul>
                   </div>
               </div>
-              
+              {/* Problem Framing */}
               <div className="section grid-y gap-default">
                 <div className="row gap-vertical">
                   <h2 className="text-center text-color-secondary">
@@ -265,13 +266,11 @@ export default function Proj4() {
                         description="Efficient inventory management is key to the success of small and medium-sized businesses. Poor mobile solutions limit their capability to manage inventory remotely, leading to issues in order management, data access, and business agility, thus affecting productivity and possibly revenue."
                         Icon={FavoriteBorderOutlinedIcon}
                       />
-
                     </div>
                   </div>
                 </div>
               </div>
-
-
+              {/* Goal */}
               <div className="section grid-x gap-default">
                 <div className="col gap-vertical">
                   <h2 className="text-left text-color-secondary">
@@ -290,8 +289,7 @@ export default function Proj4() {
                   />
                 </div>
               </div>
-
-
+              {/* Understanding Users */}
               <div className="section grid-y gap-default"> 
                 <div className="row gap-vertical">
                   <h2 className="text-center text-color-secondary">
@@ -332,6 +330,7 @@ export default function Proj4() {
                   </div>
                 </div>
               </div>
+              {/* User Personas */}
               <div className="section grid-y gap-default">
                 <div className="row gap-vertical">
                   <h3 className="text-center text-color-primary">
@@ -353,6 +352,7 @@ export default function Proj4() {
                   </div>
                 </div>
               </div>
+              {/* User Journey Map */}
               <div className="section grid-y gap-default">
                 <div className="row gap-vertical">
                   <h3 className="text-center text-color-primary">
@@ -363,7 +363,7 @@ export default function Proj4() {
                   </div>
                 </div>
               </div>
-
+              {/* Insights */}
               <div className="section grid-x gap-default">
                 <div className="col gap-vertical">
                   <h2 className="text-left text-color-secondary">
@@ -405,12 +405,10 @@ export default function Proj4() {
                       layout="fill"
                       objectFit="contain"
                     />  
-
                   </div>
                 </div>
               </div>
-
-
+              {/* Ideation */}
               <div className="section grid-y gap-default">
                 <div className="row gap-vertical">
                   <h2 className="text-center text-color-secondary">
@@ -424,31 +422,21 @@ export default function Proj4() {
                   <Image
                     src="/fbgo-sketches-long.jpg" // The path to your image file, relative to the public directory
                     alt="Fishbowl" // Alternative text for the image
-                    width={1100} // The width of the image in pixels
-                    height={400}
+                    layout="responsive"
+                    width={202.4}
+                    height={24}
+                    objectFit="contain"
                   />  
-
-                  
                 </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-
               </div>
-    
-
+              {/* Outcomes */}
               <div className="section grid-x gap-default">
                 <div className="col gap-vertical">
                   <h2 className="text-left text-color-secondary">
                     outcomes
                   </h2>
                   <h5 className="text-left text-color-default">
-                    Lorem ipsum                
+                    Due to time constraints, I decided to take what I learned during the wireframe tests, and move directly to a high-fidelity prototype. My strategy was to address the specific points of friction through careful attention to copy and to make sure the design patterns I&apos;d apply were as clear as possible — and consistent with the overall Venmo experience. Testing was generally successful — most tasks were completed by testers at a success rate of 72% or higher. The path to apply for a loan, however, failed. At the point of realizing what they were about to commit to, users either bounced, or seemed to click back and forth between disclosures and the approval step. Qualitative feedback also revealed several users&apos; issues with better understanding the relationship between their &quot;friends&quot; and &quot;borrowers,&quot; or financial literacy in general.                
                   </h5>
                 </div>
                 <div className="col padding-vertical gap-vertical">
@@ -483,20 +471,10 @@ export default function Proj4() {
                       layout="fill"
                       objectFit="contain"
                     />  
-
                   </div>
-                  
-
-
-
                 </div>
               </div>
-
-
-
-        
-
-
+              {/* Next Steps */}
               <div className="section grid-y gap-default">
                 <div className="row">
                   <h2 className="text-center text-color-secondary">
@@ -509,22 +487,19 @@ export default function Proj4() {
                 <div className="row">
                   <div className="grid-x">
                     <div className="col">
-
                     </div>
                     <div className="col">
-
                     </div>
                   </div>
                 </div>
               </div>
-
-
+              {/* More Work */}
               <div className="section grid-x gap-default">
-                <div className="col">
+                <div className="col blog-container">
                   <h2 className="text-left text-color-secondary">
                     more works
                   </h2>
-                  <div style={{ display: 'flex', justifyContent: 'space-around' }}> {/* Adjust the layout as needed */}
+                  <div className="grid-x blog"> 
                     <BlogCard 
                       image="/hm-project-img.jpg"
                       title="Haven Massage"
@@ -543,8 +518,6 @@ export default function Proj4() {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
