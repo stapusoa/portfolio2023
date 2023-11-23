@@ -130,14 +130,7 @@ body, main {
 
 }
 */
-.content-wrapper {
-  background-image: url("../public/background-texture-dots.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
-  display: block;
-}
+
 
 
 
@@ -264,8 +257,16 @@ body, main {
     padding-top: 5rem;
   }
 
+  .content-wrapper {
+    background-image: url("../public/background-texture-dots.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+  }
+
   .content {
-    padding: 2rem 0;
+    padding: 0;
   }
 
   .section {
@@ -468,6 +469,15 @@ body, main {
     height: 100vh;
     margin-top: -5rem; 
     padding-top: 5rem;
+  }
+
+  .content-wrapper {
+    background-image: url("../public/background-texture-dots.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: block;
   }
 
   .content {
@@ -676,6 +686,15 @@ body, main {
     height: 100vh;
     margin-top: -5rem; 
     padding-top: 5rem;
+  }
+
+  .content-wrapper {
+    background-image: url("../public/background-texture-dots.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: block;
   }
 
   .content {
