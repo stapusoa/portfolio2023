@@ -2,12 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 const JourneyMapWrapper = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   display: block;
+
+  @media (min-width: 319px) {
+    max-width: 256px;
+  }
+
+  @media (min-width: 600px) {
+    max-width: 552px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1100px;
+  }
 `;
 
 const Header = styled.div`
@@ -29,6 +40,11 @@ const UserGoal = styled.p`
   color: #616972;
   margin: 0;
   padding: 0;
+`;
+
+const ScrollableContainer = styled.div`
+  overflow-x: auto; // Enable horizontal scrolling for this container
+  width: 100%; // Take full width of the parent
 `;
 
 const Table = styled.div`
@@ -78,35 +94,37 @@ const UserJourneyMap = ({ user, journey }) => (
       <UserName>{user.name}</UserName>
       <UserGoal>{user.goal}</UserGoal>
     </Header>
-    <Table>
-      <TableRow>
-        <TableLabel></TableLabel>
-        <TableHeader>Discover tool</TableHeader>
-        <TableLabel></TableLabel>
-        <TableHeader>Create</TableHeader>
-        <TableLabel></TableLabel>
-        <TableHeader>Manage</TableHeader>
-      </TableRow>
+    <ScrollableContainer>
+      <Table>
         <TableRow>
-        <TableLabel>Task</TableLabel>
-          {journey.map((step, index) => (
-            <TableCell key={index}>{step.task}</TableCell>
-          ))}
+          <TableLabel></TableLabel>
+          <TableHeader>Discover tool</TableHeader>
+          <TableLabel></TableLabel>
+          <TableHeader>Create</TableHeader>
+          <TableLabel></TableLabel>
+          <TableHeader>Manage</TableHeader>
         </TableRow>
-        <TableRow>
-          <TableLabel>Feeling</TableLabel>
-          {journey.map((step, index) => (
-            <TableCell key={index}>{step.feeling}</TableCell>
-          ))}
-        </TableRow>
-        <TableRow>
-          <TableLabel>Improvement Opportunity</TableLabel>
-          {journey.map((step, index) => (
-            <TableCell key={index}>{step.opportunity}</TableCell>
-          ))}
-        </TableRow>
+          <TableRow>
+          <TableLabel>Task</TableLabel>
+            {journey.map((step, index) => (
+              <TableCell key={index}>{step.task}</TableCell>
+            ))}
+          </TableRow>
+          <TableRow>
+            <TableLabel>Feeling</TableLabel>
+            {journey.map((step, index) => (
+              <TableCell key={index}>{step.feeling}</TableCell>
+            ))}
+          </TableRow>
+          <TableRow>
+            <TableLabel>Improvement Opportunity</TableLabel>
+            {journey.map((step, index) => (
+              <TableCell key={index}>{step.opportunity}</TableCell>
+            ))}
+          </TableRow>
       </Table>
-    </JourneyMapWrapper>
+    </ScrollableContainer>
+  </JourneyMapWrapper>
 );
 
   export default UserJourneyMap;
