@@ -133,7 +133,6 @@ export default function Proj1() {
                       <strong>Project duration</strong> - Originally, the project was roadmapped for a month reskinning of the mobile native app. Through research and brainstorming, the project specs changed. We worked on it from January 2021 to September 2021.
                     </h5>
                   </div>
-                  
                 </div>
                 <div className="img50">
                   <Image
@@ -276,7 +275,6 @@ export default function Proj1() {
                         description="Efficient inventory management is key to the success of small and medium-sized businesses. Poor mobile solutions limit their capability to manage inventory remotely, leading to issues in order management, data access, and business agility, thus affecting productivity and possibly revenue."
                         Icon={FavoriteBorderOutlinedIcon}
                       />
-
                     </div>
                   </div>
                 </div>
@@ -416,7 +414,6 @@ export default function Proj1() {
                       layout="fill"
                       objectFit="contain"
                     />  
-
                   </div>
                 </div>
               </div>
@@ -439,18 +436,7 @@ export default function Proj1() {
                     height={24}
                     objectFit="contain"
                   />  
-
-                  
                 </div>
-                      
-                    
-                      
-                      
-                    
-                      
-                      
-                    
-
               </div>
               {/* Outcomes */}
               <div className="section grid-x gap-default">
@@ -494,12 +480,7 @@ export default function Proj1() {
                       layout="fill"
                       objectFit="contain"
                     />  
-
                   </div>
-                  
-
-
-
                 </div>
               </div>
               {/* Next Steps */}
@@ -515,21 +496,19 @@ export default function Proj1() {
                 <div className="row">
                   <div className="grid-x">
                     <div className="col">
-
                     </div>
                     <div className="col">
-
                     </div>
                   </div>
                 </div>
               </div>
               {/* More Work */}
               <div className="section grid-x gap-default">
-                <div className="col">
+                <div className="col blog-container">
                   <h2 className="text-left text-color-secondary">
                     more works
                   </h2>
-                  <div className="grid-x"> 
+                  <div className="grid-x blog"> 
                     <BlogCard 
                       image="/hm-project-img.jpg"
                       title="Haven Massage"

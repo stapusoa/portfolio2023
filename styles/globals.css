@@ -270,7 +270,7 @@ body, main {
     padding: 8vh 10vw;
   }
   
-  .grid-x {
+  .grid-x, .grid-x.reverse {
     flex-direction: column;
   }
   
@@ -323,7 +323,7 @@ body, main {
   }
   
   .text-block {
-    width: 50%;
+    width: 100%;
   }
   
   .align-center {
@@ -475,6 +475,10 @@ body, main {
   .grid-x {
     display: flex;
     justify-content: space-around;
+  }
+
+  .grid-x.reverse {
+    flex-direction: row-reverse;
   }
   
   .vertical-center {
@@ -675,6 +679,10 @@ body, main {
   .grid-x {
     display: flex;
     justify-content: space-around;
+  }
+
+  .grid-x.reverse {
+    flex-direction: row-reverse;
   }
   
   .vertical-center {

@@ -43,6 +43,17 @@ export default function Home() {
           <div className="content-wrapper">
             <div className="content" id="projects-section">
               <div className="section grid-x vertical-center gap-4">
+                <div className="col text-block">
+                  <h5 className="text-right text-color-default">
+                    fishbowl go
+                  </h5>
+                  <h3 className="text-right text-color-secondary">
+                    simplifying inventory management in the warehouse and in the office.
+                  </h3>
+                  <div className="align-right">
+                    <MyLink className="my-link" href="/proj1">case study </MyLink>
+                  </div>
+                </div>
                 <div className="proj-img-container">
                   <Image
                       src="/fbprod-project-image.jpg" // The path to your image file, relative to the public directory
@@ -51,27 +62,16 @@ export default function Home() {
                       objectFit="cover"
                   />   
                 </div>
+              </div>
+              <div className="section grid-x reverse vertical-center gap-4">
                 <div className="col text-block">
                   <h5 className="text-left text-color-default">
-                    fishbowl go
-                  </h5>
-                  <h3 className="text-left text-color-secondary">
-                    simplifying inventory management in the warehouse and in the office.
-                  </h3>
-                  <div className="align-left">
-                    <MyLink className="my-link" href="/proj1">case study </MyLink>
-                  </div>
-                </div>
-              </div>
-              <div className="section grid-x vertical-center gap-4">
-                <div className="col text-block">
-                  <h5 className="text-right text-color-default">
                     haven massage
                   </h5>
-                  <h3 className="text-right text-color-secondary">
+                  <h3 className="text-left text-color-secondary">
                     providing professional therapeutic services through easy booking.            
                   </h3>
-                  <div className="align-right">
+                  <div className="align-left">
                     <MyLink className="my-link" href="/proj2">case study </MyLink>
                   </div>
                 </div>
@@ -85,6 +85,17 @@ export default function Home() {
                 </div>
               </div>
               <div className="section grid-x vertical-center gap-4">
+                <div className="col text-block">
+                  <h5 className="text-right text-color-default">
+                    travelpass
+                  </h5>
+                  <h3 className="text-right text-color-secondary">
+                    providing the explorer at heart unforgettable adventures.              
+                  </h3>
+                  <div className="align-right">
+                    <MyLink className="my-link" href="/proj3">case study </MyLink>
+                  </div>
+                </div>
                 <div className="proj-img-container">
                   <Image
                       src="/tp-project-img.jpg" // The path to your image file, relative to the public directory
@@ -92,17 +103,6 @@ export default function Home() {
                       layout="fill"
                       objectFit="cover"
                   />   
-                </div>
-                <div className="col text-block">
-                  <h5 className="text-left text-color-default">
-                    travelpass
-                  </h5>
-                  <h3 className="text-left text-color-secondary">
-                    providing the explorer at heart unforgettable adventures.              
-                  </h3>
-                  <div className="align-left">
-                    <MyLink className="my-link" href="/proj3">case study </MyLink>
-                  </div>
                 </div>
               </div>
             </div>
