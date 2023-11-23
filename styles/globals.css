@@ -260,7 +260,7 @@ body, main {
   .content-wrapper {
     background-image: url("../public/background-texture-dots.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 150%;
     background-attachment: fixed;
     display: block;
   }
