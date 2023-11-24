@@ -7,18 +7,9 @@ const JourneyMapWrapper = styled.div`
   border: 1px solid #ddd;
   border-radius: 8px;
   display: block;
-
-  @media (min-width: 319px) {
-    max-width: 256px;
-  }
-
-  @media (min-width: 600px) {
-    max-width: 552px;
-  }
-
-  @media (min-width: 1440px) {
-    max-width: 1100px;
-  }
+  width: 70vw; /* Full viewport width */
+  max-width: 100%; /* Ensure it doesn't exceed the parent's width */
+  
 `;
 
 const Header = styled.div`
@@ -103,6 +94,10 @@ const UserJourneyMap = ({ user, journey }) => (
           <TableHeader>Create</TableHeader>
           <TableLabel></TableLabel>
           <TableHeader>Manage</TableHeader>
+          <TableLabel></TableLabel>
+          <TableHeader>Track</TableHeader>
+          <TableLabel></TableLabel>
+          <TableHeader>Feedback</TableHeader>
         </TableRow>
           <TableRow>
           <TableLabel>Task</TableLabel>

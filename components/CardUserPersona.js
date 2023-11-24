@@ -65,6 +65,8 @@ const CardWrapper = styled.div`
 const PainContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: left;
+  text-align: left;
   font-family: 'Gilroy', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
@@ -74,6 +76,8 @@ const PainContainer = styled.div`
 const GoalContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: left;
+  text-align: left;
   font-family: 'Gilroy', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;

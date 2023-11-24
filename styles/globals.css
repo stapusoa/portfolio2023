@@ -132,6 +132,13 @@ body, main {
 */
 
 
+.map-container {
+  display: flex;
+  flex-direction: row; /* or 'column', depending on your design */
+  width: 100%; /* Ensure full width */
+  justify-content: center; /* Center children, adjust as needed */
+  align-items: stretch; /* Stretch children vertically */
+}
 
 
 
