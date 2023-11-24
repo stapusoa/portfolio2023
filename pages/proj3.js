@@ -12,7 +12,7 @@ import CardUserPersona from '../components/CardUserPersona';
 import UserJourneyMap from '../components/UserJourneyMap';
 import BlogCard from '../components/BlogCard';
 import DevicesIcon from '@mui/icons-material/Devices';
-
+import UserFlow from '../components/UserFlow';
 
 const userPersona1 = {
   name: "Jennifer G",
@@ -29,33 +29,33 @@ const userPersona2 = {
   name: "Kevin W",
   job: "Salesrep",
   image: "/man1.svg",
-  quote: "Efficiency is key!",
-  bio: "A passionate manager with a knack for problem-solving.",
-  demo: "29, MBA, San Francisco",
-  pain: "Lack of efficient tools",
-  goal: "Quality control at best prices"
+  quote: "Customer relationship management is my priority.",
+  bio: "Loves the outdoors and hanging out with friends.",
+  demo: "34, High School, Denver",
+  pain: "Lack of training tools and customer management features",
+  goal: "To quickly access product information and availability"
 };
 
 const userPersona3 = {
   name: "Habid R",
   job: "Administrator",
   image: "/man2.svg",
-  quote: "Efficiency is key!",
-  bio: "A passionate manager with a knack for problem-solving.",
-  demo: "29, MBA, San Francisco",
-  pain: "Lack of efficient tools",
-  goal: "Quality control at best prices"
+  quote: "Always looking for ways to be more efficient.",
+  bio: "Very active in local service organizations.",
+  demo: "41, BA, Atlanta",
+  pain: "Poor integration with other apps",
+  goal: "To streamline inventory processes and reduce manual errors"
 };
 
 const userPersona4 = {
   name: "Maya L",
   job: "Warehouse Worker",
   image: "/woman2.svg",
-  quote: "Efficiency is key!",
-  bio: "A passionate manager with a knack for problem-solving.",
-  demo: "29, MBA, San Francisco",
-  pain: "Lack of efficient tools",
-  goal: "Quality control at best prices"
+  quote: "I need a reliable and easy way to manage inventory.",
+  bio: "Often uses a variety of apps for personal use and work.",
+  demo: "26, BS, Columbus",
+  pain: "Occasional sync issues between the app and client",
+  goal: "Reduce time spent on data entry"
 };
 
 const user = {
@@ -64,14 +64,49 @@ const user = {
 };
 
 const journey = [
-  { task: "Log into inventory system", feeling: "Frustrated", opportunity: "Simplify login process" },
+  { task: "Log into inventory system", feeling: "Hopeful", opportunity: "Simplify login process and training" },
   {},
   { task: "Check inventory levels", feeling: "Overwhelmed", opportunity: "Improve dashboard clarity" },
   {},
-  { task: "Check inventory levels", feeling: "Overwhelmed", opportunity: "Improve dashboard clarity" },
+  { task: "Update orders and customer info", feeling: "Frustrated", opportunity: "Streamline the integration process" },
+  {},
+  { task: "Track orders and review reports", feeling: "Anticipation", opportunity: "Continuous improvement based on user feedback, focusing on usability enhancements" },
+  {},
+  { task: "Check app updates and training videos", feeling: "Invested", opportunity: "Develop a structured system for collecting and prioritizing user suggestions" },
 
-  // Add more steps as needed
 ];
+
+
+const flowData = {
+  columns: [
+    {
+      header: 'Home',
+      labels: ['Overview', 'Notifications/stats', 'Calendar'],
+      bulletPoints: ['Stats/info of company, products, tickets', 'Updates of changes', 'Stats of each module', 'View events in calendar']
+    },
+    {
+      header: 'Inventory',
+      labels: ['Parts & Inventory'], 
+      bulletPoints: ['Add/edit parts', 'View/edit general info', 'View/edit inventory details (tracking, BOM, default locations, vendors', 'Inventory event actions (add, scrap, cycle, move)']
+    },
+    {
+      header: 'Manufacturing',
+      labels: ['Manufacture Order', 'Work Order', 'Bill of Materials'], 
+      bulletPoints: ['Create new MO/WO', 'Issue/unissue orders', 'MO to PO', 'WO to Pick', 'WO to MO', 'Quick Build/Fulfill', 'Editable general info: number, date scheduled, location group, class', 'Editable general info: scheduled start/finish, class, priority, category, location, customer/job', 'View scheduling, details, assigned users, and notes of each Work Order item', 'View/edit instructions']
+    },
+    {
+      header: 'Sales',
+      labels: ['Sales Order', 'Customers', 'Picking', 'Packing', 'Shipping', 'Delivery'], 
+      bulletPoints: ['Add new sales order', 'View/edit sales order', 'Change status of SO', 'Change date scheduled', 'Change customer or shipping address', 'Change carrier/service', 'View totals', 'View Tax info', 'View SO items', 'Add/delete items', 'Add item by type', 'Quick add product to item list', 'View list of customers', 'Add/edit customers', 'Search customers by status, name, account number, location, contact, salesrep', 'Edit general info (name, status, address, date created/last changed, user ID, contact info)', 'Start, finish, void, commit, group orders', 'Send to ship']
+    },
+    {
+      header: 'Purchasing',
+      labels: ['Purchase Order', 'Vendor', 'Receiving'], 
+      bulletPoints: ['Add new purchase order', 'View/edit PO', 'Change date scheduled', 'Change customer or shipping address', 'Change carrier/service', 'View list of vendors', 'Add/edit vendors', 'Search vendor by status, name, account number, location', 'Edit general info (name, status, address, date entered/last changed, user ID, contact info)', 'Receive, void, reconcile, fulfill orders']
+    },
+  ]
+};
+
 
 
 export default function Proj3() {
@@ -367,8 +402,8 @@ export default function Proj3() {
                   <h3 className="text-center text-color-primary">
                       user journey map
                   </h3>
-                  <div className="grid-x">
-                  <UserJourneyMap user={user} journey={journey} />
+                  <div className="map-container">
+                    <UserJourneyMap user={user} journey={journey} />
                   </div>
                 </div>
               </div>
@@ -438,6 +473,88 @@ export default function Proj3() {
                   />  
                 </div>
               </div>
+              {/* User Flow */}
+              <div className="section grid-y gap-default">
+                <div className="row gap-vertical">
+                  <h3 className="text-center text-color-primary">
+                      site map
+                  </h3>
+                  <div className="map-container">
+                    <UserFlow user={flowData.user} columns={flowData.columns} />
+                  </div>
+
+                </div>
+              </div>
+              {/* Wireframes */}
+              <div className="section grid-y gap-default">
+                <div className="row gap-vertical">
+                  <h3 className="text-center text-color-primary">
+                      digital wireframes
+                  </h3>
+                  <div className="row gap-vertical">
+                    <h5 className="text-center text-color-default">
+                      Navigation, quick actions and searching through inventory were essential features we needed to refine.
+                    </h5>
+                    <div className="proj3-img-container">
+                      <Image
+                        src="/wireframe-fb.jpg" // The path to your image file, relative to the public directory
+                        alt="Fishbowl" // Alternative text for the image
+                        layout="responsive"
+                        width={200}
+                        height={200}
+                        objectFit="contain"
+                      />  
+                    </div>
+                  </div>
+                  <div className="row gap-vertical">
+                    <h5 className="text-center text-color-default">
+                      Navigation, quick actions and searching through inventory were essential features we needed to refine.
+                    </h5>
+                    <div className="proj3-img-container">
+                      <Image
+                        src="/wireframe-fb-2.jpg" // The path to your image file, relative to the public directory
+                        alt="Fishbowl" // Alternative text for the image
+                        layout="responsive"
+                        width={200}
+                        height={200}
+                        objectFit="contain"
+                      />  
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              {/* Mockups */}
+              <div className="section grid-y gap-default">
+                <div className="row gap-vertical">
+                  <h3 className="text-center text-color-primary">
+                      key mockups
+                  </h3>
+                  <div className="row gap-vertical">
+                    <h5 className="text-center text-color-default">
+                      After several iterations of the scope of the project, layout, and features it was decided that we would focus on creating an iPad/tablet app geared toward administrative tasks - separate from the mobile app that is geared toward warehouse tasks.
+                    </h5>
+                    <div className="proj3-img-container">
+                      <Image
+                        src="/mockup-fb.jpg" // The path to your image file, relative to the public directory
+                        alt="Fishbowl" // Alternative text for the image
+                        layout="responsive"
+                        width={572.8}
+                        height={308.5}
+                        objectFit="contain"
+                      />  
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+
+
+              
+
+
+
               {/* Outcomes */}
               <div className="section grid-x gap-default">
                 <div className="col gap-vertical">
@@ -445,53 +562,62 @@ export default function Proj3() {
                     outcomes
                   </h2>
                   <h5 className="text-left text-color-default">
-                    Due to time constraints, I decided to take what I learned during the wireframe tests, and move directly to a high-fidelity prototype. My strategy was to address the specific points of friction through careful attention to copy and to make sure the design patterns I&apos;d apply were as clear as possible — and consistent with the overall Venmo experience. Testing was generally successful — most tasks were completed by testers at a success rate of 72% or higher. The path to apply for a loan, however, failed. At the point of realizing what they were about to commit to, users either bounced, or seemed to click back and forth between disclosures and the approval step. Qualitative feedback also revealed several users&apos; issues with better understanding the relationship between their &quot;friends&quot; and &quot;borrowers,&quot; or financial literacy in general.                
+                    Usability testing of the Fishbowl Go prototype was a pivotal phase in our project, yielding crucial insights. The testing showed that our redesigned prototype markedly enhanced the existing app, significantly improving user-friendliness and efficiency, thereby addressing key user challenges. However, as we were preparing for the development phase, unforeseen organizational changes occurred. The acquisition of Fishbowl Inventory by another company led to a realignment of priorities and the eventual departure of our development team. This resulted in the project being shelved, despite the prototype's demonstrated potential to meet and exceed user needs.
                   </h5>
                 </div>
                 <div className="col padding-vertical gap-vertical">
                   <div>
                     <h6 className="text-left text-color-secondary">
-                      Implement Toast Messages
+                      Process and Development
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Introduce toast notifications for immediate feedback after an action is completed, providing users with clear confirmation and peace of mind.                
+                      Over the course of the project, our team worked diligently to understand and integrate user feedback into a comprehensive redesign of the Fishbowl Go app. My role involved closely collaborating with the development team, the Head of Product, and the UX Director to ensure that the new design addressed user needs effectively.
                     </h6> 
                   </div>
                   <div>
                     <h6 className="text-left text-color-secondary">
-                      Visual Confirmation Indicators
+                      Impact
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Develop visual cues, such as checkmarks or color changes, to indicate successful completion of tasks like inventory updates or data entry.               
+                      Though the redesigned Fishbowl Go app did not see the light of day in its intended form, the project left an indelible mark. It demonstrated the value of listening to user feedback and the need for continuous evolution in software design to meet changing user requirements. The insights gained from this project can serve as a valuable reference for future endeavors in similar domains.              
                     </h6> 
                   </div>
                   <div>
                     <h6 className="text-left text-color-secondary">
-                      Enhanced Feedback Loop
+                      Considerations
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Strengthen the app’s feedback loop by providing distinct auditory or haptic feedback for completed actions, enhancing the user experience for those relying on different sensory inputs.                
+                      Following these developments, I made the decision to leave Fishbowl. Despite the project not reaching its final stages of development and deployment, the journey was filled with learning experiences and professional growth. The process underscored the importance of user-centered design and the impact it can have on product development.
                     </h6> 
                   </div>
-                  <div className="img50">
+                  
+                </div>
+              </div>
+              {/* Prototype */}
+              <div className="section grid-y gap-default">
+                <div className="row gap-vertical">
+                  <h2 className="text-center text-color-secondary">
+                    prototype
+                  </h2>
+                  <h4 className="text-center text-color-default">
+                    Here is the link to the Figma prototype:
+                  </h4>
+                  <div className="grid-y col vertical-center">
+                    <ButtonPrimary className="button-primary">
+                      prototype
+                    </ButtonPrimary>  
+                  </div>
+                  <div className="proj3-img-container">
                     <Image
-                      src="/fishbowl.jpg" // The path to your image file, relative to the public directory
+                      src="/prototype-fb.jpg" // The path to your image file, relative to the public directory
                       alt="Fishbowl" // Alternative text for the image
-                      layout="fill"
+                      layout="responsive"
+                      width={200}
+                      height={200}
                       objectFit="contain"
                     />  
                   </div>
-                </div>
-              </div>
-              {/* Next Steps */}
-              <div className="section grid-y gap-default">
-                <div className="row">
-                  <h2 className="text-center text-color-secondary">
-                    next steps
-                  </h2>
-                  <h4 className="text-center text-color-default">
-                    Lorem ipsum dolor sit amet consectetur. Habitasse ullamcorper gravida enim erat. Pharetra hac elit urna malesuada quisque sit non luctus sit. Fermentum felis eget euismod sed est leo. Venenatis egestas aliquam amet proin habitasse nunc.                
-                  </h4>
+
                 </div>
                 <div className="row">
                   <div className="grid-x">

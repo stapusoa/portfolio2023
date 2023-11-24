@@ -74,9 +74,6 @@ const journey = [
   {},
   { task: "Check app updates and training videos", feeling: "Invested", opportunity: "Develop a structured system for collecting and prioritizing user suggestions" },
 
-
-
-  // Add more steps as needed
 ];
 
 
@@ -107,7 +104,6 @@ const flowData = {
       labels: ['Purchase Order', 'Vendor', 'Receiving'], 
       bulletPoints: ['Add new purchase order', 'View/edit PO', 'Change date scheduled', 'Change customer or shipping address', 'Change carrier/service', 'View list of vendors', 'Add/edit vendors', 'Search vendor by status, name, account number, location', 'Edit general info (name, status, address, date entered/last changed, user ID, contact info)', 'Receive, void, reconcile, fulfill orders']
     },
-    // ... more columns as needed ...
   ]
 };
 
