@@ -412,7 +412,7 @@ export default function Proj3() {
                     insights
                   </h2>
                   <h5 className="text-left text-color-default">
-                    User research and feedback analysis from 37,221 TravelPass users revealed significant interaction issues with the trips feature. Notably, 27% of users exhibited 'rage clicks', indicating frustration or confusion, while 5.68% encountered 'dead clicks', suggesting non-responsive elements. Additionally, 1% of users demonstrated excessive scrolling, which may point to difficulties in finding relevant information. A striking 82.18% of these interactions were recorded on mobile devices, highlighting potential shortcomings in mobile responsiveness. User feedback consistently pointed to a confusing flow within the trips feature, frequent errors like creating duplicate trips, poor responsiveness on mobile and tablet interfaces, and unclear forms. These insights underscore the need for a targeted redesign focusing on mobile optimization, streamlined navigation, and a more intuitive user interface to enhance the overall user experience.
+                    User research and feedback analysis from 37,221 TravelPass users revealed significant interaction issues with the trips feature. Notably, 27% of users exhibited &aposrage clicks&apos, indicating frustration or confusion, while 5.68% encountered &aposdead clicks&apos, suggesting non-responsive elements. Additionally, 1% of users demonstrated excessive scrolling, which may point to difficulties in finding relevant information. A striking 82.18% of these interactions were recorded on mobile devices, highlighting potential shortcomings in mobile responsiveness. User feedback consistently pointed to a confusing flow within the trips feature, frequent errors like creating duplicate trips, poor responsiveness on mobile and tablet interfaces, and unclear forms. These insights underscore the need for a targeted redesign focusing on mobile optimization, streamlined navigation, and a more intuitive user interface to enhance the overall user experience.
                   </h5>
                 </div>
                 <div className="col padding-vertical gap-vertical">
@@ -479,7 +479,7 @@ export default function Proj3() {
                   </h3>
                   <div className="row gap-vertical">
                     <h5 className="text-center text-color-default">
-                      In the initial phase, our design approach focused on automating trip creation. However, further user research revealed that the majority of our users typically have preconceived trip plans, diminishing the need for a fully automated itinerary. Consequently, this feature was deprioritized to better align with our users' actual planning behaviors and preferences.
+                      In the initial phase, our design approach focused on automating trip creation. However, further user research revealed that the majority of our users typically have preconceived trip plans, diminishing the need for a fully automated itinerary. Consequently, this feature was deprioritized to better align with our users&apos actual planning behaviors and preferences.
                     </h5>
                     <div className="proj3-img-container">
                       <Image
@@ -595,7 +595,7 @@ export default function Proj3() {
                       Impact
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      While some user issues remained unresolved, the trip planning feature's redesign attracted 32,327 new unique users and boosted sales within a month of relaunch. This update demonstrated that the planning process was effectively simplified, aligning more closely with the needs of many users.
+                      While some user issues remained unresolved, the trip planning feature&aposs redesign attracted 32,327 new unique users and boosted sales within a month of relaunch. This update demonstrated that the planning process was effectively simplified, aligning more closely with the needs of many users.
                     </h6> 
                   </div>
                   <div>
@@ -603,7 +603,7 @@ export default function Proj3() {
                       Considerations
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      In redesigning the trip planning feature, it was crucial to balance user feedback with project timelines, resulting in a streamlined yet imperfect solution. The relaunch's success, marked by increased user engagement and sales, underscored the importance of continuous iteration to address remaining user challenges.
+                      In redesigning the trip planning feature, it was crucial to balance user feedback with project timelines, resulting in a streamlined yet imperfect solution. The relaunch&aposs success, marked by increased user engagement and sales, underscored the importance of continuous iteration to address remaining user challenges.
                     </h6> 
                   </div>
                   
