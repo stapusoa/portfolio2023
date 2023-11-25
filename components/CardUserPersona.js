@@ -14,8 +14,8 @@ const PersonaInfo = styled.div`
 `;
 
 const PersonaImage = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 152.735px;
+  height: 198px;
   object-fit: cover;
   position: absolute;
   bottom: 0;
@@ -33,7 +33,7 @@ const PersonaDetails = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 8px;
 `;
 
 const CardWrapper = styled.div`

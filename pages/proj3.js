@@ -15,97 +15,67 @@ import DevicesIcon from '@mui/icons-material/Devices';
 import UserFlow from '../components/UserFlow';
 
 const userPersona1 = {
-  name: "Jennifer G",
-  job: "Purchasing Manager",
-  image: "/woman1.svg",
-  quote: "Efficiency is key!",
-  bio: "A passionate manager with a knack for problem-solving.",
-  demo: "29, MBA, San Francisco",
-  pain: "Lack of efficient tools",
-  goal: "Quality control at best prices"
+  name: "Olivia F",
+  job: "Product Manager",
+  image: "/woman3.svg",
+  quote: "I love when everything falls into place perfectly during my trips.",
+  bio: "Thrives on organization. Often takes charge in planning trips.",
+  demo: "30, BA, Chicago",
+  pain: "Difficulty finding reliable information in one platform",
+  goal: "To create detailed travel itineraries without spending excessive time on research"
 };
 
 const userPersona2 = {
-  name: "Kevin W",
-  job: "Salesrep",
-  image: "/man1.svg",
-  quote: "Customer relationship management is my priority.",
-  bio: "Loves the outdoors and hanging out with friends.",
-  demo: "34, High School, Denver",
-  pain: "Lack of training tools and customer management features",
-  goal: "To quickly access product information and availability"
+  name: "Eric W",
+  job: "Sales Manager",
+  image: "/man4.svg",
+  quote: "I need to plan my trips quickly between meetings.",
+  bio: "Relies on tools that save time and simplify his busy lifestyle.",
+  demo: "35, BA, New York City",
+  pain: "Lack of a quick and easy tool for travel planning",
+  goal: "To efficiently book and manage travel plans"
 };
 
 const userPersona3 = {
-  name: "Habid R",
-  job: "Administrator",
-  image: "/man2.svg",
-  quote: "Always looking for ways to be more efficient.",
-  bio: "Very active in local service organizations.",
-  demo: "41, BA, Atlanta",
-  pain: "Poor integration with other apps",
-  goal: "To streamline inventory processes and reduce manual errors"
+  name: "Paula T",
+  job: "Marketing Manager",
+  image: "/woman4.svg",
+  quote: "Each trip I take is a reflection of my unique taste and style.",
+  bio: "Enjoys curating unique experiences.",
+  demo: "28, High School, LA",
+  pain: "Existing platforms lack personalization and tailored travel suggestions",
+  goal: "To find a travel planning platform that offers custom recommendations"
 };
 
 const userPersona4 = {
-  name: "Maya L",
-  job: "Warehouse Worker",
-  image: "/woman2.svg",
-  quote: "I need a reliable and easy way to manage inventory.",
-  bio: "Often uses a variety of apps for personal use and work.",
-  demo: "26, BS, Columbus",
-  pain: "Occasional sync issues between the app and client",
-  goal: "Reduce time spent on data entry"
+  name: "Ian M",
+  job: "Engineer",
+  image: "/man3.svg",
+  quote: "I want a one-stop solution for all my travel needs.",
+  bio: "Values convenience, preferring all-in-one solutions.",
+  demo: "40, BS, Austin",
+  pain: "Too many sites for different aspects of travel",
+  goal: "To efficiently manage plans through a single, integrated platform"
 };
 
 const user = {
-  name: "Jennifer G",
-  goal: "Optimize inventory management process."
+  name: "Eric W",
+  goal: "To efficiently book and manage travel plans."
 };
 
 const journey = [
-  { task: "Log into inventory system", feeling: "Hopeful", opportunity: "Simplify login process and training" },
+  { task: "Search for hotel and book", feeling: "Curious", opportunity: "Enhance search functionality with better filters and recommendations to make finding the perfect hotel more engaging and efficient" },
   {},
-  { task: "Check inventory levels", feeling: "Overwhelmed", opportunity: "Improve dashboard clarity" },
+  { task: "Sign into account to connect booking to a new trip", feeling: "Tentative", opportunity: "Redesign the account sign-in process and trip connection interface for a more straightforward and user-friendly experience" },
   {},
-  { task: "Update orders and customer info", feeling: "Frustrated", opportunity: "Streamline the integration process" },
+  { task: "Search for nearby activities and add to itinerary", feeling: "Anxious", opportunity: "Optimize activity search and itinerary integration with user-friendly interfaces and clear instructions to alleviate anxiety and enhance satisfaction" },
   {},
-  { task: "Track orders and review reports", feeling: "Anticipation", opportunity: "Continuous improvement based on user feedback, focusing on usability enhancements" },
+  { task: "Review details of bookings and plans", feeling: "Eager", opportunity: "Refine the presentation of booking details and plans with a focus on clarity and accessibility, enhancing the user's anticipation and eagerness" },
   {},
-  { task: "Check app updates and training videos", feeling: "Invested", opportunity: "Develop a structured system for collecting and prioritizing user suggestions" },
+  { task: "Rate the trip and send review for bookings", feeling: "Reflective", opportunity: "Create an engaging and simple feedback system that encourages users to reflect on their experience and easily share their thoughts" },
 
 ];
 
-
-const flowData = {
-  columns: [
-    {
-      header: 'Home',
-      labels: ['Overview', 'Notifications/stats', 'Calendar'],
-      bulletPoints: ['Stats/info of company, products, tickets', 'Updates of changes', 'Stats of each module', 'View events in calendar']
-    },
-    {
-      header: 'Inventory',
-      labels: ['Parts & Inventory'], 
-      bulletPoints: ['Add/edit parts', 'View/edit general info', 'View/edit inventory details (tracking, BOM, default locations, vendors', 'Inventory event actions (add, scrap, cycle, move)']
-    },
-    {
-      header: 'Manufacturing',
-      labels: ['Manufacture Order', 'Work Order', 'Bill of Materials'], 
-      bulletPoints: ['Create new MO/WO', 'Issue/unissue orders', 'MO to PO', 'WO to Pick', 'WO to MO', 'Quick Build/Fulfill', 'Editable general info: number, date scheduled, location group, class', 'Editable general info: scheduled start/finish, class, priority, category, location, customer/job', 'View scheduling, details, assigned users, and notes of each Work Order item', 'View/edit instructions']
-    },
-    {
-      header: 'Sales',
-      labels: ['Sales Order', 'Customers', 'Picking', 'Packing', 'Shipping', 'Delivery'], 
-      bulletPoints: ['Add new sales order', 'View/edit sales order', 'Change status of SO', 'Change date scheduled', 'Change customer or shipping address', 'Change carrier/service', 'View totals', 'View Tax info', 'View SO items', 'Add/delete items', 'Add item by type', 'Quick add product to item list', 'View list of customers', 'Add/edit customers', 'Search customers by status, name, account number, location, contact, salesrep', 'Edit general info (name, status, address, date created/last changed, user ID, contact info)', 'Start, finish, void, commit, group orders', 'Send to ship']
-    },
-    {
-      header: 'Purchasing',
-      labels: ['Purchase Order', 'Vendor', 'Receiving'], 
-      bulletPoints: ['Add new purchase order', 'View/edit PO', 'Change date scheduled', 'Change customer or shipping address', 'Change carrier/service', 'View list of vendors', 'Add/edit vendors', 'Search vendor by status, name, account number, location', 'Edit general info (name, status, address, date entered/last changed, user ID, contact info)', 'Receive, void, reconcile, fulfill orders']
-    },
-  ]
-};
 
 
 
@@ -147,7 +117,7 @@ export default function Proj3() {
           <div className="content-wrapper">
             <div className="content" id="projects-section">
               {/* Overview */}
-              <div className="section grid-x ">
+              <div className="section grid-x gap-secondary">
                 <div className="col gap-vertical">
                   <h2 className="text-left text-color-secondary">
                     overview
@@ -157,7 +127,8 @@ export default function Proj3() {
                       <Badge icon={DevicesIcon} />
                     </div>
                     <h5 className="text-left text-color-default">
-                      <strong>The product</strong> - Fishbowl Go is an app designed for Fishbowl Inventory clients, tailored for warehouse tasks. It serves as a powerful tool to streamline sales orders, manufacture orders, and other tasks for inventory management.
+                      <strong>The product</strong> - 
+                        Travelpass is a travel booking platform that offers a wide selection of hotels and travel experiences, along with unique access to non-public rates. Designed for travelers who take multiple trips a year, it aims to simplify the travel planning process by providing comprehensive options and competitive pricing.
                     </h5>
                   </div>
                   <div className="grid-x">
@@ -165,14 +136,15 @@ export default function Proj3() {
                       <Badge icon={AccessTimeIcon} />
                     </div>
                     <h5 className="text-left text-color-default">
-                      <strong>Project duration</strong> - Originally, the project was roadmapped for a month reskinning of the mobile native app. Through research and brainstorming, the project specs changed. We worked on it from January 2021 to September 2021.
+                      <strong>Project duration</strong> - 
+                        In January 2023, we initiated a project to enhance Travelpass by adding a trip planning feature, focusing on stay details and custom event creation. The first version, launched in May 2023, laid the groundwork for future integrations with event bookings and transportation services.
                     </h5>
                   </div>
                 </div>
                 <div className="img50">
                   <Image
-                    src="/fishbowl.png" // The path to your image file, relative to the public directory
-                    alt="Fishbowl" // Alternative text for the image
+                    src="/web-tpg.png" // The path to your image file, relative to the public directory
+                    alt="Travelpass" // Alternative text for the image
                     layout="fill"
                     objectFit="contain"
                   />   
@@ -192,12 +164,12 @@ export default function Proj3() {
                       </li>
                       <li>
                         <h6 className="subtitle1 text-left text-color-default">
-                          Project Lead
+                          Project Lead - Jan-Aug
                         </h6>
                       </li>
                       <li>
                         <h6 className="subtitle1 text-left text-color-default">
-                          User Interface (UI) Designer
+                          User Interface (UI) Designer - Jan-Aug
                         </h6>
                       </li>
                       <li>
@@ -208,6 +180,16 @@ export default function Proj3() {
                       <li>
                         <h6 className="subtitle1 text-left text-color-default">
                           User Researcher
+                        </h6>
+                      </li>
+                      <li>
+                        <h6 className="subtitle1 text-left text-color-default">
+                          Design Systems (DSM) Manager
+                        </h6>
+                      </li>
+                      <li>
+                        <h6 className="subtitle1 text-left text-color-default">
+                          Information Architect
                         </h6>
                       </li>
                     </ul>
@@ -229,12 +211,27 @@ export default function Proj3() {
                       </li>
                       <li>
                         <h6 className="subtitle1 text-left text-color-default">
-                          User journeys & site maps
+                          User journeys
+                        </h6>
+                      </li>
+                      <li>
+                        <h6 className="subtitle1 text-left text-color-default">
+                          Research & Competitive Analysis 
                         </h6>
                       </li>
                       <li>
                         <h6 className="subtitle1 text-left text-color-default">
                           High-fidelity prototype user flows in Figma
+                        </h6>
+                      </li>
+                      <li>
+                        <h6 className="subtitle1 text-left text-color-default">
+                          Style Guide
+                        </h6>
+                      </li>
+                      <li>
+                        <h6 className="subtitle1 text-left text-color-default">
+                          Design System
                         </h6>
                       </li>
                       <li>
@@ -251,7 +248,7 @@ export default function Proj3() {
                     <ul>
                       <li>
                         <h6 className="subtitle1 text-left text-color-default">
-                          8 months
+                          4 months
                         </h6>
                       </li>
                       <li>
@@ -261,12 +258,12 @@ export default function Proj3() {
                       </li>
                       <li>
                         <h6 className="subtitle1 text-left text-color-default">
-                          Userbrain
+                          Notion
                         </h6>
                       </li>
                       <li>
                         <h6 className="subtitle1 text-left text-color-default">
-                          Miro
+                          Microsoft Clarity
                         </h6>
                       </li>
                     </ul>
@@ -279,7 +276,8 @@ export default function Proj3() {
                     problem framing
                   </h2>
                   <h5 className="text-center text-color-default">
-                    Businesses face difficulties in managing inventory efficiently due to desktop-only software limitations. This issue intensifies when they need to manage tasks remotely. Current mobile apps focus mainly on warehouse activities, creating a need for a mobile-friendly inventory management tool for administrative tasks. Fishbowl Inventory clients specifically need a tablet-compatible solution that integrates with their existing systems for effective inventory, order, and data management outside the office.                </h5>
+                    Travelers currently face the challenge of using disjointed tools for trip planning, leading to a fragmented experience. Our goal was to develop a simple MVP for Travelpass that integrates hotel bookings and custom event planning into a single, user-friendly itinerary feature.
+                  </h5>
                 </div>
                 <div className="row">
                   <div className="grid-x gap-secondary">
@@ -287,13 +285,13 @@ export default function Proj3() {
                       <Card 
                         header="who"
                         title="Who is experiencing the problem?"
-                        description="Small to medium-sized businesses using inventory management systems, specifically clients of Fishbowl Inventory."
+                        description="The problem is experienced by both leisure and business travelers who need to organize their trips."
                         Icon={PersonOutlineIcon}
                       />
                       <Card 
                         header="when"
                         title="When does the problem occur?"
-                        description="The problem arises when these businesses need to perform inventory management and administrative tasks remotely, such as when they are away from the office or do not have access to desktop systems."
+                        description="Often before the trip when planning and continues to be a concern during the trip."
                         Icon={AccessTimeIcon}
                       />
                     </div>
@@ -301,13 +299,13 @@ export default function Proj3() {
                       <Card 
                         header="where"
                         title="Where does the user experience the problem?"
-                        description="The problem occurs in environments where these businesses need to manage inventory and administrative tasks remotely or on-the-go, outside of a traditional desktop setup."
+                        description="The problem occurs at home or elsewhere when planning the trip and when trying to go to the hotel or event."
                         Icon={PlaceOutlinedIcon}
                       />
                       <Card 
                         header="why"
                         title="Why does this pain point matter to the user?"
-                        description="Efficient inventory management is key to the success of small and medium-sized businesses. Poor mobile solutions limit their capability to manage inventory remotely, leading to issues in order management, data access, and business agility, thus affecting productivity and possibly revenue."
+                        description="This pain point is significant because a fragmented planning process increases stress and diminishes the travel experience, making a unified planning tool essential for efficient and enjoyable travel."
                         Icon={FavoriteBorderOutlinedIcon}
                       />
                     </div>
@@ -321,12 +319,12 @@ export default function Proj3() {
                     goal
                   </h2>
                   <h5 className="text-left text-color-default">
-                    To successfully launch Fishbowl Go, a user-friendly iPad/tablet app, designed to bridge the gap in mobile inventory management for small to medium-sized businesses. Our aim was to simplify administrative tasks, making inventory management as efficient on tablets as it is on desktops. The goal was to enhance operational efficiency by at least 20% and improve user satisfaction, targeting a 15% increase in Fishbowl Inventory&apos;s client base within the first six months after launch.              
+                    The primary goal was to create an efficient trip planning feature in Travelpass that intuitively presented and prioritized key information for a successful stay. This feature enabled users to effortlessly manage their bookings, including options to print receipts, cancel bookings, share itineraries, and add plans to personal calendars. Emphasis was on user-centric design, ensuring that the most critical actions and information were easily accessible and manageable.
                   </h5>
                 </div>
                 <div className="img50">
                   <Image
-                    src="/goal.jpg"
+                    src="/goal-tpg2.png"
                     alt="Goal"
                     layout="fill"
                     objectFit="contain" // Optional: you can adjust as needed
@@ -340,36 +338,36 @@ export default function Proj3() {
                     understanding the user
                   </h2>
                   <h5 className="text-center text-color-default">
-                    User research revealed that accountants and business owners primarily depend on traditional, often manual methods for inventory management, such as desktop software, spreadsheets, and paper records. This reliance leads to several pain points:                
+                    Travelpass users seek a trip planning feature that offers comprehensive information and ease of organization, prioritizing an all-in-one tool for managing accommodations, flights, and activities. They value detailed visual organization, user-friendly interfaces, and integrated functionalities to streamline their travel planning process.
                   </h5>
                 </div>
                 <div className="grid-x gap-secondary">
                   <div className="col"> 
                     <CardNumbered 
                       number="1"
-                      title="Errors"
-                      description="Manual methods and desktop-bound software contribute to data inaccuracies and operational inefficiencies, especially in real-time inventory tracking."
+                      title="Information Organization"
+                      description="Users struggle to organize and access key travel details in one place, often feeling overwhelmed by disparate sources of information."
                     />
                   </div>
                   <div className="col"> 
                     <CardNumbered 
                       number="2"
-                      title="Limited Access"
-                      description="The inability to access and manage inventory data on the move hinders effective remote work, causing delays and decision-making challenges."
+                      title="Convenience"
+                      description="These users value the ease and efficiency but frequently encounter cumbersome and time-consuming processes across various platforms."
                     />
                   </div>
                   <div className="col"> 
                     <CardNumbered 
                       number="3"
-                      title="Inaccuracy"
-                      description="Managing inventory across various locations is cumbersome with traditional methods, leading to issues in synchronization and record accuracy."
+                      title="Preferences"
+                      description="Users have distinct preferences in how they access travel information, often finding existing tools lack the personalization and detail they need."
                     />
                   </div>
                   <div className="col"> 
                     <CardNumbered 
                       number="4"
-                      title="Simplicity"
-                      description="There&apos;s a significant demand for a user-friendly, mobile platform that integrates with existing systems, allowing efficient and flexible management of inventory tasks."
+                      title="Integration"
+                      description="Travelers face the challenge of using multiple, unconnected platforms for different aspects of their trip, leading to a fragmented planning experience."
                     />
                   </div>
                 </div>
@@ -414,38 +412,38 @@ export default function Proj3() {
                     insights
                   </h2>
                   <h5 className="text-left text-color-default">
-                    During the Fishbowl Go project, we identified a crucial user experience issue: several actions within the app were ambiguous regarding their completion status. Users frequently expressed uncertainty about whether their actions, such as inventory updates or order processing, were successfully executed. To enhance clarity and user confidence, we propose integrating more explicit feedback mechanisms into the app&apos;s workflow. This approach includes the implementation of toast messages and clear visual indicators to affirm that an action has been successfully completed. These additions are aimed at reducing user frustration and improving the overall efficiency and user satisfaction with the app.                
+                    User research and feedback analysis from 37,221 TravelPass users revealed significant interaction issues with the trips feature. Notably, 27% of users exhibited 'rage clicks', indicating frustration or confusion, while 5.68% encountered 'dead clicks', suggesting non-responsive elements. Additionally, 1% of users demonstrated excessive scrolling, which may point to difficulties in finding relevant information. A striking 82.18% of these interactions were recorded on mobile devices, highlighting potential shortcomings in mobile responsiveness. User feedback consistently pointed to a confusing flow within the trips feature, frequent errors like creating duplicate trips, poor responsiveness on mobile and tablet interfaces, and unclear forms. These insights underscore the need for a targeted redesign focusing on mobile optimization, streamlined navigation, and a more intuitive user interface to enhance the overall user experience.
                   </h5>
                 </div>
                 <div className="col padding-vertical gap-vertical">
                   <div>
                     <h6 className="text-left text-color-secondary">
-                      implement toast messages
+                      mobile optimization
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Introduce toast notifications for immediate feedback after an action is completed, providing users with clear confirmation and peace of mind.                
+                      Improve the site’s mobile experience by streamlining the flow for faster load times, optimizing touch targets, and minimizing clicks. Update the design system to enhance accessibility and responsiveness, focusing on elements like cards and typography.
                     </h6> 
                   </div>
                   <div>
                     <h6 className="text-left text-color-secondary">
-                      visual confirmation indicators
+                      streamlined navigation
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Develop visual cues, such as checkmarks or color changes, to indicate successful completion of tasks like inventory updates or data entry.               
+                      Revise the user journey for greater intuitiveness, restructure the information layout, and simplify forms. Implement breadcrumb navigation and progress indicators to guide users clearly through the process, reducing confusion and scrolling.
                     </h6> 
                   </div>
                   <div>
                     <h6 className="text-left text-color-secondary">
-                      enhanced feedback loop
+                      error handling
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Strengthen the app’s feedback loop by providing distinct auditory or haptic feedback for completed actions, enhancing the user experience for those relying on different sensory inputs.                
+                      The expedited launch of the TravelPass site led to numerous errors, requiring significant post-launch fixes. The tight deadline affected initial testing, necessitating later updates to enhance functionality and the user interface.
                     </h6> 
                   </div>
                   <div className="img50">
                     <Image
-                      src="/fb-wireframes.jpg" // The path to your image file, relative to the public directory
-                      alt="Fishbowl" // Alternative text for the image
+                      src="/insights-tpg.png" // The path to your image file, relative to the public directory
+                      alt="Travelpass" // Alternative text for the image
                       layout="fill"
                       objectFit="contain"
                     />  
@@ -459,30 +457,18 @@ export default function Proj3() {
                     ideation
                   </h2>
                   <h5 className="text-center text-color-default">
-                    Through rapid, paper-based sketching, we honed in on simplifying core tasks in the Fishbowl Go app. This exercise was key in integrating effective design patterns and streamlining user navigation between screens, striking a balance between simplicity and functionality.              
+                    We went through three iterations of the trips feature. Below shows the process of simplifying navigation, design elements, and the creation and management of itineraries. 
                   </h5>
                 </div>
                 <div className="proj3-img-container">
                   <Image
-                    src="/fbgo-sketches-long.jpg" // The path to your image file, relative to the public directory
+                    src="/tpg-sketches.jpg" // The path to your image file, relative to the public directory
                     alt="Fishbowl" // Alternative text for the image
                     layout="responsive"
                     width={202.4}
                     height={24}
                     objectFit="contain"
                   />  
-                </div>
-              </div>
-              {/* User Flow */}
-              <div className="section grid-y gap-default">
-                <div className="row gap-vertical">
-                  <h3 className="text-center text-color-primary">
-                      site map
-                  </h3>
-                  <div className="map-container">
-                    <UserFlow user={flowData.user} columns={flowData.columns} />
-                  </div>
-
                 </div>
               </div>
               {/* Wireframes */}
@@ -493,12 +479,12 @@ export default function Proj3() {
                   </h3>
                   <div className="row gap-vertical">
                     <h5 className="text-center text-color-default">
-                      Navigation, quick actions and searching through inventory were essential features we needed to refine.
+                      In the initial phase, our design approach focused on automating trip creation. However, further user research revealed that the majority of our users typically have preconceived trip plans, diminishing the need for a fully automated itinerary. Consequently, this feature was deprioritized to better align with our users' actual planning behaviors and preferences.
                     </h5>
                     <div className="proj3-img-container">
                       <Image
-                        src="/wireframe-fb.jpg" // The path to your image file, relative to the public directory
-                        alt="Fishbowl" // Alternative text for the image
+                        src="/wireframes-tpg.png" // The path to your image file, relative to the public directory
+                        alt="Travelpass" // Alternative text for the image
                         layout="responsive"
                         width={200}
                         height={200}
@@ -508,11 +494,21 @@ export default function Proj3() {
                   </div>
                   <div className="row gap-vertical">
                     <h5 className="text-center text-color-default">
-                      Navigation, quick actions and searching through inventory were essential features we needed to refine.
+                      Actions like searching, adding and booking through trips needed to be simplified.
                     </h5>
                     <div className="proj3-img-container">
                       <Image
-                        src="/wireframe-fb-2.jpg" // The path to your image file, relative to the public directory
+                        src="/wireframe-tpg.jpg" // The path to your image file, relative to the public directory
+                        alt="Fishbowl" // Alternative text for the image
+                        layout="responsive"
+                        width={200}
+                        height={200}
+                        objectFit="contain"
+                      />  
+                    </div>
+                    <div className="proj3-img-container">
+                      <Image
+                        src="/wireframe-tpg-2.jpg" // The path to your image file, relative to the public directory
                         alt="Fishbowl" // Alternative text for the image
                         layout="responsive"
                         width={200}
@@ -532,11 +528,31 @@ export default function Proj3() {
                   </h3>
                   <div className="row gap-vertical">
                     <h5 className="text-center text-color-default">
-                      After several iterations of the scope of the project, layout, and features it was decided that we would focus on creating an iPad/tablet app geared toward administrative tasks - separate from the mobile app that is geared toward warehouse tasks.
+                      Below shows the three versions of trips for Travelpass. Priorities and scope changed a lot throughout this project. Thus, the user problems were never fully resolved.
                     </h5>
                     <div className="proj3-img-container">
                       <Image
-                        src="/mockup-fb.jpg" // The path to your image file, relative to the public directory
+                        src="/mockup-tpg1.jpg" // The path to your image file, relative to the public directory
+                        alt="Fishbowl" // Alternative text for the image
+                        layout="responsive"
+                        width={572.8}
+                        height={308.5}
+                        objectFit="contain"
+                      />  
+                    </div>
+                    <div className="proj3-img-container">
+                      <Image
+                        src="/mockup-tpg2.jpg" // The path to your image file, relative to the public directory
+                        alt="Fishbowl" // Alternative text for the image
+                        layout="responsive"
+                        width={572.8}
+                        height={308.5}
+                        objectFit="contain"
+                      />  
+                    </div>
+                    <div className="proj3-img-container">
+                      <Image
+                        src="/mockup-tpg3.jpg" // The path to your image file, relative to the public directory
                         alt="Fishbowl" // Alternative text for the image
                         layout="responsive"
                         width={572.8}
@@ -562,7 +578,7 @@ export default function Proj3() {
                     outcomes
                   </h2>
                   <h5 className="text-left text-color-default">
-                    Usability testing of the Fishbowl Go prototype was a pivotal phase in our project, yielding crucial insights. The testing showed that our redesigned prototype markedly enhanced the existing app, significantly improving user-friendliness and efficiency, thereby addressing key user challenges. However, as we were preparing for the development phase, unforeseen organizational changes occurred. The acquisition of Fishbowl Inventory by another company led to a realignment of priorities and the eventual departure of our development team. This resulted in the project being shelved, despite the prototype's demonstrated potential to meet and exceed user needs.
+                    Following the initial launch, the project team expanded with the addition of three designers, leading to a shift in my responsibilities. I transitioned from a UI/UX designer and researcher role to focusing on interaction design, managing the design system, and overseeing information architecture. Concurrently, changes in management positions led to a reevaluation of priorities and project scope. During this period, although the flow was streamlined, several pre-existing issues, such as errors and responsiveness challenges, persisted.
                   </h5>
                 </div>
                 <div className="col padding-vertical gap-vertical">
@@ -571,7 +587,7 @@ export default function Proj3() {
                       Process and Development
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Over the course of the project, our team worked diligently to understand and integrate user feedback into a comprehensive redesign of the Fishbowl Go app. My role involved closely collaborating with the development team, the Head of Product, and the UX Director to ensure that the new design addressed user needs effectively.
+                      During the project, I initially worked as a UI/UX designer and researcher, focusing on user interviews and collaboration with the data team and product manager. Later, my role shifted to backend design, refining the design system and reassessing the user flow in close coordination with the architects.
                     </h6> 
                   </div>
                   <div>
@@ -579,7 +595,7 @@ export default function Proj3() {
                       Impact
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Though the redesigned Fishbowl Go app did not see the light of day in its intended form, the project left an indelible mark. It demonstrated the value of listening to user feedback and the need for continuous evolution in software design to meet changing user requirements. The insights gained from this project can serve as a valuable reference for future endeavors in similar domains.              
+                      While some user issues remained unresolved, the trip planning feature's redesign attracted 32,327 new unique users and boosted sales within a month of relaunch. This update demonstrated that the planning process was effectively simplified, aligning more closely with the needs of many users.
                     </h6> 
                   </div>
                   <div>
@@ -587,35 +603,55 @@ export default function Proj3() {
                       Considerations
                     </h6>
                     <h6 className="subtitle1 text-left text-color-default">
-                      Following these developments, I made the decision to leave Fishbowl. Despite the project not reaching its final stages of development and deployment, the journey was filled with learning experiences and professional growth. The process underscored the importance of user-centered design and the impact it can have on product development.
+                      In redesigning the trip planning feature, it was crucial to balance user feedback with project timelines, resulting in a streamlined yet imperfect solution. The relaunch's success, marked by increased user engagement and sales, underscored the importance of continuous iteration to address remaining user challenges.
                     </h6> 
                   </div>
                   
                 </div>
               </div>
-              {/* Prototype */}
+              {/* Design System */}
               <div className="section grid-y gap-default">
                 <div className="row gap-vertical">
                   <h2 className="text-center text-color-secondary">
-                    prototype
+                    design system
                   </h2>
                   <h4 className="text-center text-color-default">
-                    Here is the link to the Figma prototype:
+                    Below is the design system I created and managed.
                   </h4>
-                  <div className="grid-y col vertical-center">
-                    <ButtonPrimary className="button-primary">
-                      prototype
-                    </ButtonPrimary>  
-                  </div>
                   <div className="proj3-img-container">
                     <Image
-                      src="/prototype-fb.jpg" // The path to your image file, relative to the public directory
+                      src="/design-system.jpg" // The path to your image file, relative to the public directory
                       alt="Fishbowl" // Alternative text for the image
                       layout="responsive"
                       width={200}
                       height={200}
                       objectFit="contain"
                     />  
+                  </div>
+
+                </div>
+                <div className="row">
+                  <div className="grid-x">
+                    <div className="col">
+                    </div>
+                    <div className="col">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Prototype */}
+              <div className="section grid-y gap-default">
+                <div className="row gap-vertical">
+                  <h2 className="text-center text-color-secondary">
+                    website
+                  </h2>
+                  <h4 className="text-center text-color-default">
+                    Here is the link to the trip feature of Travelpass:
+                  </h4>
+                  <div className="grid-y col vertical-center">
+                    <ButtonPrimary className="button-primary">
+                      website
+                    </ButtonPrimary>  
                   </div>
 
                 </div>
